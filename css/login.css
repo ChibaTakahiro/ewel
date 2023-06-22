@@ -1,0 +1,86 @@
+/*中央寄せ*/
+div#loginform{
+	position:absolute;
+	left:50%;
+	top:30%;
+	margin-left:-250px;
+	margin-top:-50px;
+	background:#fff;
+	color:#999;
+}
+
+/*ログインボックス*/
+#loginbtn{
+	background-image:url("/images/loginbutton.gif");
+	width:160px;
+	height:40px;
+	border:none;
+	text-indent:-9999px;
+	display:block;
+	line-height: 0px;
+	margin:10px;
+	
+}
+#loginbtn:hover,
+#loginbtn:focus {
+	background-image:url("/images/loginbutton.gif");
+	background-position:0px -40px;
+}
+
+.logintext{
+	height:40px;
+	width:200px;
+	background-repeat:no-repeat;
+	font-size:18px;
+	padding-left:10px;
+	padding-right:20px;
+	padding-top:3px;
+	margin-left:30px;
+	font-weight:bold;
+	border:1px solid #ccc;
+	background-color:#ffffff;
+}
+
+/*ログインテーブル*/
+table#logtbl{
+	padding:80px;
+	border:1px solid;
+}
+table#logtbl th{
+	width:50px;
+	height:50px;
+	font-weight:normal;
+	text-align:left;
+	color:#808080;
+}
+table#backtable{
+	border-collapse: collapse;
+    border-spacing: 0;
+	width:500px;
+	height:200px;
+}
+
+.f14{
+	font-size:14px;
+}
+div.recommend{
+	border:1px solid #ccc;
+	padding:15px;
+	margin:10px;
+}
+div.recommend p.red{
+	color:red;
+	border-bottom:1px solid #ccc;
+}
+div.recommend ul{
+	list-style-type:none; 
+	padding:0px 5px;
+	margin:0;
+}
+
+div#brauz{
+	border:1px solid #ff4500;
+	padding:10px;
+	background-color:#ffc0cb;
+	color:#ff0000;
+}

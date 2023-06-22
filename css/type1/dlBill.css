@@ -1,0 +1,165 @@
+p#billTitle{
+	text-align:center;
+	font-size:18px;
+}
+input#pt1{
+	width:30px;
+}
+input#pt2{
+	width:40px;
+}
+input.w350{
+	width:350px;
+}
+input.w300{
+	width:300px;
+}
+.center{
+	text-align:center;
+}
+p#center{
+	margin:5px;
+}
+
+h3{
+	border:1px solid #006699;
+	background-color:#ccffcc;
+	font-weight:normal;
+	padding:2px;
+}
+div.leftbox{
+	width:590px;
+	float:left;
+}
+div.rightbox{
+	width:300px;
+	float:right;
+
+}
+table#tantotbl{
+	border-top:1px solid;
+	width:400px;
+	margin-top:5px;
+	border-collapse:collapse;
+	border-spacing:0;
+}
+table#tantotbl td p{
+	margin:0px;
+}
+table#tantotbl th{
+	border-bottom:1px solid;
+	padding-top:5px;
+	padding-bottom:5px;
+	width:100px;
+}
+table#tantotbl td{
+	border-bottom:1px solid;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+table#tantotbl td input{
+	width: 220px;
+}
+input#money {
+	width: 220px;
+	font-size: 1.5em;
+}
+table#tantotbl td input#pay_year{
+	width:40px;
+}
+table#tantotbl td input#pay_month{
+	width:30px;
+}
+table#tantotbl td input#pay_day{
+	width:30px;
+}
+table#tantotbl td input#bank{
+	width:140px;
+}
+table#tantotbl td input#bank_no{
+	width:60px;
+}
+
+p#billnumber{
+	border-bottom:1px solid;
+	margin:0px;
+	padding:0px;
+}
+p#billdate{
+	margin:0px;
+	padding:0px;
+}
+#billdate input{
+	width:20px;
+}
+#company_post1{
+	width:30px;;
+}
+#company_post2{
+	width:40px;;
+}
+#company_address{
+	width:240px;;
+}
+#company_name{
+	width:240px;;
+}
+#syahan{
+	position:absolute;
+	width:90px;
+	margin-left:190px;
+	z-index:-1;
+	display:none;
+}
+
+table#tantohanko{
+	border:1px solid;
+	width:80px;
+	border-collapse:collapse;
+	border-spacing:0;
+	margin-top:20px;
+}
+table#tantohanko td{
+	text-align:center;
+	border:1px solid;
+}
+table#tantohanko td#point{
+	height:60px;
+	
+}
+div#tanto_han{
+	display:none;
+}
+
+div#hankochk{
+	float:right;
+	clear:both;
+}
+
+#other{
+	width:100%;
+	height:80px;
+}
+p#pbutton{
+	margin:0;
+	padding:0;
+	text-align:right;
+}
+p#center{
+	text-align:center;
+	clear:both;
+}
+.button3{
+	width: 175px;
+	color: #ffffff;
+	background-color: #666699;
+	border: outset 2px #9999cc;
+	margin: 0px;
+	padding: 3px;
+	font-size: 12px;
+	line-height: 12px;
+	text-align: center;
+	text-decoration: none;
+	margin-left:20px;
+	
+}

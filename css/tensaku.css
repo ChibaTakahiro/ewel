@@ -1,0 +1,41 @@
+/*------------------
+ê›ñ‚ÉJÉeÉSÉä
+-------------------*/
+h3{
+	font-size:18px;
+}
+select#tensaku_id{
+	width:100%;
+	font-size:18px;
+	padding:3px;
+}
+p.mg{
+	margin:0px;
+	padding:0px;
+}
+
+/*------------------
+ì¸óÕì‡óe
+--------------------*/
+div.divBox{
+	width:100%;
+	padding:3px;
+	border:1px solid #000000;
+	background-color:#ffffa3;
+}
+
+
+hr.hr{
+	height: 1px;
+	border: none;
+	border-top: 1px #000000 dashed;
+
+}
+textarea.textarea{
+	width:100%;
+	height:100px;
+}
+select.selectPoint{
+	width:60px;
+	font-size:20px;
+}

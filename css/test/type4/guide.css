@@ -1,0 +1,114 @@
+.f18{
+	font-size:18px;
+}
+hr{
+	border: 0;
+	height: 1px;
+	background: #333;
+	background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+	background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc);
+	background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc);
+	background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+ol{
+	font-size:18px;
+}
+ol li{
+	margin-bottom:10px;
+	
+}
+
+ol li.b{
+	font-weight:bold;
+}
+
+div.center{
+	text-align:center;
+}
+
+#page{
+	text-align:right;
+}
+
+
+table#table{
+	border-top:1px solid #ffffff;
+	border-left:1px solid #ffffff;
+	border-collapse:collapse;
+	border-spacing:0;
+	background-color:#ffffff;
+	empty-cells:show;
+	width:100%;
+	margin-bottom:30px;
+}
+table#table th{
+    border-right:1px solid #ffffff;
+    border-bottom:1px solid #ffffff;
+    color:#000000;
+    background-color:#ccccff;
+    background-position:left top;
+    padding:0.3em 1em;
+    text-align:center;
+	font-weight:normal;
+	width:40%;
+}
+table#table th.w10{
+	width:10px;
+	padding:0px 10px;
+	
+}
+table#table th.w300{
+	width:300px;
+	padding:0px 10px;
+	
+}
+table#table td{
+    border-right:1px solid #ffffff;
+    border-bottom:1px solid #ffffff;
+	height:50px;
+	padding:0px 3px 0px 3px;
+}
+table#table td.ans{
+	background-color:#e6e6fa;
+	text-align:center;
+}
+.no{
+	background-color:#ccccff;
+	text-align:center;
+}
+
+div#rltBox{
+	width:650px;
+	margin:0 auto;
+}
+div#rltBox p{
+	font-weight:bold;
+	font-size:18px;
+	padding:0;
+	margin:0;
+	text-align:center;
+	
+}
+div#rltBox p.tle{
+	text-align:center;
+	margin:10px;
+}
+div#rltBox p.sub,
+div#rltBox p.tle{
+	text-align:center;
+	margin:10px;
+}
+div#rltBox p.fin2,
+div#rltBox p.fin{
+	font-size:16px;
+	color:red;
+	text-align:center;
+	margin:10px;
+}
+
+.center{
+	text-align:center;
+}
+.red{
+	color:red;
+}

@@ -1,0 +1,12 @@
+div.csvlink{
+	background-color:#;
+	
+}
+div.csvlink a{
+	display:block;
+	font-size:14px;
+	text-decoration: none;
+	color:#ffffff;
+	background-color:#8080ff;
+	width:40%;
+}

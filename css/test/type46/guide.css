@@ -1,0 +1,116 @@
+.f18{
+	font-size:18px;
+}
+hr{
+	border: 0;
+	height: 1px;
+	background: #333;
+	background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+	background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc);
+	background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc);
+	background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+#TimeLeft{
+	text-align:right;
+	font-size:18px;
+	
+}
+ol{
+	font-size:18px;
+}
+ol li{
+	margin-bottom:10px;
+	
+}
+
+ol li.b{
+	font-weight:bold;
+}
+
+div.center{
+	text-align:center;
+}
+
+#page{
+	text-align:right;
+}
+
+div.question{
+	width:600px;
+	margin:0 auto;
+	font-size:18px;
+}
+div.question h3{
+	font-size:22px;
+	border-left:5px solid #b0c4de;
+	padding:5px 5px 5px 15px;
+	width:100%;
+}
+div.question dl dt{
+	clear: left;
+	float: left;
+	margin-bottom: 15px;
+	width: 9.5em;
+	padding-left: 5px;
+	color: #000;
+
+}
+div.question dl dd{
+	margin-bottom: 15px;
+	margin-left: 7.5em;
+
+}
+div.question ul{
+	padding:0px;
+	margin:0px;
+	margin-left:10px;
+}
+div.question ul li{
+	list-style-type:none;
+}
+
+div.question input.text{
+	width:300px;
+	padding:3px;
+}
+div.question input.radio{
+	width:20px;
+	height:20px;
+	padding:5px;
+}
+input.radio2{
+	width:30px;
+	height:30px;
+	padding:5px;
+}
+div.mt40{
+	margin-top:40px;
+}
+p.errmsg{
+	margin:0;
+	padding:0;
+}
+p.pt40{
+	margin:40px 0px 5px 0px;
+}
+
+ul.line li span{
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 1.5;
+}
+ol.questionOl li.num{
+	margin-top:30px;
+	font-weight:bold;
+	list-style-type:none;
+}
+
+ol.questionOl  li p.nm{
+	width:5%;
+	float:left;
+}
+ol.questionOl  li p.q{
+	width:94%;
+	float:left;
+}

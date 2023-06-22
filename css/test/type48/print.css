@@ -1,0 +1,89 @@
+.f18{
+	font-size:18px;
+}
+div.title{
+	height:50px;
+	border:1px solid #4169e1;
+	line-height:50px;
+	text-align:center;
+	color:#4169e1;
+	border-radius: 10px;		/* CSS3ëêàƒ */
+	-webkit-border-radius: 10px;	/* Safari,Google Chromeóp */
+	-moz-border-radius: 10px;	/* Firefoxóp */
+}
+p.names{
+	margin-top:5px;
+	margin-bottom:10px;
+}
+table.printTbl{
+	margin-top:10px;
+	width:100%;
+	border-collapse: collapse;
+	margin-bottom:5px;
+}
+table.printTbl td{
+	border:1px solid #000;
+	padding:5px 10px;
+}
+.printbutton{
+	clear:both;
+	position:fixed;
+    bottom:40px;
+    height:40px;
+	width:500px;
+	font-size:12px;
+	text-align:center;
+	margin-right:30px;
+	padding:10px;
+	left:60%;
+}
+.printbutton input{
+	height:40px;
+	width:200px;
+}
+.memos{
+	border:1px solid #000;
+	height:90px;
+	width:99.8%;
+	margin-top:2px;
+	page-break-after:always;
+	display:none;
+}
+hr{
+    border: 0px;
+    height: 1px;
+    background: #333;
+}
+@media print{
+	body {
+		font-size: 8px;
+	}
+	#foot{
+		display:none;
+	}
+	div.title{
+		height:20px;
+		border:1px solid #4169e1;
+		line-height:20px;
+		text-align:center;
+	}
+	.f18{
+		font-size:11px;
+	}
+	.printbutton{
+		display:none;
+	}
+	.memos{
+		display:block;
+		border:1px solid #000;
+		height:160px;
+		width:100%;
+		page-break-after:always;
+	}
+	hr{
+	    border: 1px;
+	    height: 1px;
+	    background: #333;
+	}
+}
+

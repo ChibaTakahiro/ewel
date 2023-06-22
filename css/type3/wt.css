@@ -1,0 +1,13 @@
+table#table td{
+	text-align:center;
+}
+table#table td input{
+	width:50px;
+}
+#master_text{
+	width:300px;
+	padding:3px;
+}
+table#table td input.w100{
+	width:100px;
+}

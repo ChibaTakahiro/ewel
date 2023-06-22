@@ -1,0 +1,137 @@
+div#searchTitle{
+	clear:both;
+	border:1px solid #006699;
+	width:100%;
+	background-color:#ccffcc;
+	padding:5px 0 5px 5px;
+}
+.red{
+	color:red;
+}
+p.p{
+	margin:5px 0px;
+}
+table#table{
+	margin-top:10px;
+}
+table#table th{
+	width:150px;
+	
+}
+
+table#table td{
+	text-align:left;
+	
+}
+table#table2 td input,
+table#table td input{
+	border:1px solid #ccc;
+}
+table#table td select{
+	padding:2px;
+	border:1px solid #ccc;
+}
+
+.w90per{
+	width:90%;
+}
+.w200{
+	width:200px;
+}
+span.explain{
+	font-size:12px;
+}
+div.indent{
+	text-indent:-9999px;
+	position:absolute;
+	z-index:-1;
+}
+
+
+#fileUpLoad{
+	background-color:#ffffe0;
+	width:500px;
+	height:150px;
+	border:1px solid #ccc;
+}
+
+table#table2{
+	border-top:1px solid #006699;
+    border-left:1px solid #006699;
+    border-collapse:collapse;
+    border-spacing:0;
+    background-color:#ffffff;
+    empty-cells:show;
+	width:100%;
+	margin-top:20px;
+}
+
+table#table2 th{
+	border-right:1px solid #006699;
+	border-bottom:1px solid #006699;
+	color:#000000;
+	background-color:#e0e0ff;
+	background-position:left top;
+	padding:0.3em 1em;
+	text-align:center;
+	font-size:11.5px;
+	height:30px;
+	width:150px;
+}
+table#table2 td{
+	border-right:1px solid #006699;
+    border-bottom:1px solid #006699;
+	text-align:left;
+	padding:3px;
+}
+table#table2 td input{
+	padding:2px;
+}
+
+
+#idcheck{
+	color:red;
+	font-weight:bold;
+}
+
+img#logoimg{
+	max-width:240px;
+	max-height:80px;
+}
+
+
+div#registDiv{
+	text-align:center;
+	margin-top:10px;
+	
+}
+
+div#registDiv p{
+	margin:10px;
+}
+
+div.center{
+	text-align:center;
+}
+div.center p{
+	margin-top:10px;
+}
+
+ul.ul{
+	list-style-type:none;
+	clear:both;
+}
+ul.ul li{
+	float:left;
+	line-height:40px;
+	height:40px;
+}
+ul.ul:after{
+	
+}
+input.radio{
+	width:30px;
+	height:30px;
+	margin:5px;
+}
+

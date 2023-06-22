@@ -1,0 +1,217 @@
+h3{
+	font-size:14px;
+	font-weight:normal;
+	border-bottom:1px solid #0099ff;
+	margin:10px 0;
+}
+.leftbutton{
+	float:left;
+}
+.center{
+	text-align:center;
+}
+
+.center{
+	width:200px;
+	margin:0 auto;
+}
+.center2{
+	width:500px;
+	margin:0 auto;
+}
+
+table#table2{
+	border-top:1px solid #006699;
+    border-left:1px solid #006699;
+    border-collapse:collapse;
+    border-spacing:0;
+    background-color:#ffffff;
+    empty-cells:show;
+	width:100%;
+	margin-top:15px;
+}
+
+table#table2 th{
+	border-right:1px solid #006699;
+	border-bottom:1px solid #006699;
+	color:#000000;
+	background-color:#e0e0ff;
+	background-position:left top;
+	padding:0.3em 1em;
+	text-align:center;
+	font-size:11.5px;
+	height:30px;
+}
+
+table#table2 th.w100{
+	width:100px;
+}
+table#table2 th.w200{
+	width:200px;
+}
+table#table2 td{
+	border-right:1px solid #006699;
+    border-bottom:1px solid #006699;
+	text-align:right;
+	padding:3px;
+}
+table#table2 td input{
+	padding:3px;
+}
+table#table2 td input.w30{
+	width:30px;
+}
+table#table2 td input.w40{
+	width:40px;
+}
+table#table2 td input.w300{
+	width:300px;
+}
+table#table2 td input.w400{
+	width:400px;
+}
+table#table2 td.left{
+	text-align:left;
+}
+
+
+div.disp{
+	display:none;
+}
+table#elementTable{
+/*	
+	border-top:1px solid #006699;
+*/
+    border-left:1px solid #006699;
+    border-collapse:collapse;
+    border-spacing:0;
+    background-color:#ffffff;
+    empty-cells:show;
+	width:100%;
+	
+}
+table#elementTable th{
+	border-right:1px solid #006699;
+	border-bottom:1px solid #006699;
+	color:#000000;
+	background-color:#e0e0ff;
+	background-position:left top;
+	padding:5px;
+	text-align:left;
+	font-size:11.5px;
+}
+
+table#elementTable th.w200{
+	width:200px;
+}
+
+table#elementTable td{
+	border-right:1px solid #006699;
+    border-bottom:1px solid #006699;
+	text-align:left;
+	padding:5px;
+}
+table#elementTable td input{
+	padding:3px;
+	border:1px solid #ccc;
+}
+table#elementTable td input.w400{
+	width:400px;
+}
+
+/*
+要素タイトル
+*/
+div#element{
+	border:1px solid #006699;
+	margin-top:5px;
+	background-color:#e0e0ff;
+	font-size:12px;
+	padding:5px;
+}
+ul#ulLS{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+ul#ulLS li{
+	float:left;
+	margin-right:5px;
+	width:50px;
+	border:1px solid #a0a0a0;
+	text-align:center;
+	background-color:#e0e0e0;
+	margin-bottom:5px;
+
+}
+
+ul#ulLS li a{
+	display:block;
+	text-decoration: none;
+	color:#000000;
+}
+ul#ulLS li a:hover{
+	text-decoration: underline;
+}
+
+/*
+要素カウント
+*/
+div.c{
+	clear:both;
+	margin-top:10px;
+
+}
+table.element_cnt{
+	clear:both;
+	border-top:1px solid #006699;
+    border-left:1px solid #006699;
+    border-collapse:collapse;
+    border-spacing:0;
+    background-color:#ffffff;
+    empty-cells:show;
+	width:100%;
+}
+table.element_cnt th{
+	
+	border-right:1px solid #006699;
+	border-bottom:1px solid #006699;
+	color:#000000;
+	background-color:#e0e0ff;
+	background-position:left top;
+	padding:5px;
+	text-align:left;
+	font-size:11.5px;
+}
+table.element_cnt td{
+	border-right:1px solid #006699;
+    border-bottom:1px solid #006699;
+	text-align:left;
+	padding:5px;
+	width:20%;
+}
+table.element_cnt td input{
+	padding:3px;
+	border:1px solid #ccc;
+}
+table.element_cnt td input.g{
+	background-color:#ccc;
+	width:90%;
+}
+table.element_cnt td input.w60{
+	width:60px;
+}
+
+ul#pdfUl{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+ul#pdfUl li{
+	margin-top:3px;
+	float:left;
+	width:33%;
+	border-bottom:1px solid;
+	height:45px;
+}

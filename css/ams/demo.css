@@ -1,0 +1,148 @@
+body{
+margin: 0;
+padding: 0;
+line-height:1.4;
+color:#333;
+font-family:Arial, sans-serif;
+font-size:0.9em;
+
+}
+input{
+	padding:3px;
+}
+
+#head{
+	border-top:3px solid #000000;
+	background-color:#0071ff;
+	height:100px;
+}
+#title{
+	
+	width:900px;
+	margin:0 auto;
+	background-image:url("/ams/img/title.gif");
+	height:50px;
+	background-repeat:no-repeat;
+	text-indent:-9999px;
+	margin-top:30px;
+}
+
+.w300{
+	width:300px;
+}
+.w50{
+	width:50px;
+}
+.b{
+	font-weight:bold;
+	text-align:left;
+	font-size:22px;
+	font-family: 'ÉÅÉCÉäÉI, ÇlÇr ÉSÉVÉbÉN';
+}
+.errmsg{
+	color:red;
+	padding:0;
+	margin:0;
+}
+
+.errbox,
+.errboxconf
+{
+	color:red;
+	font-weight:bold;
+	display:none;
+	position:absolute;
+	background-color:#ffffff;
+	font-size:12px;
+}
+
+#not{
+
+}
+#main{
+	width:700px;
+	margin:0 auto;
+	
+	
+}
+table#regtable{
+	width:700px;
+	margin:0 auto;
+	border-top:1px dotted #cccccc;
+    border-collapse:collapse;
+    border-spacing:0;
+	margin-top:20px;
+
+}
+table#regtable th{
+	text-align:left;
+	padding:10px;
+	border-bottom:1px dotted #cccccc;
+	font-weight:normal;
+	width:160px;
+}
+table#regtable th.p{
+	background-image:url("/ams/img/point.gif");
+	background-repeat:no-repeat;
+	background-position: right;
+	width:160px;
+}
+table#regtable td{
+	border-bottom:1px dotted #cccccc;
+	padding:10px;
+	width:540px;
+}
+
+input{
+	border:1px solid #cccccc;
+}
+textarea{
+	border:1px solid #cccccc;
+	width:300px;
+	height:100px;
+}
+#button{
+	text-align:center;
+	margin:10px;
+	padding-bottom:30px;
+}
+#submit
+,#submit2
+,.btn
+{
+	width:300px;
+	height:40px;
+	padding:10px;
+}
+#footer{
+	background-color:#0071ff;
+	text-align:right;
+	font-size:11px;
+	color:#ffffff;
+	bottom:0;
+	position:fixed;
+	width:100%;
+}
+
+div#scroll{
+	width: 700px;
+	height: 200px;
+	overflow: auto;
+	border:1px solid;
+	padding:5px;
+	margin-bottom:50px;
+}
+div#scrolltitle{
+	font-weight:bold;
+	text-align:center;
+}
+
+h2.red{
+	color:red;
+}
+div.ex{
+	font-size:12px;
+	
+}
+
+form{clear:both;}

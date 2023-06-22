@@ -1,0 +1,111 @@
+ol{
+	font-size:18px;
+}
+ol li{
+	margin-bottom:10px;
+	
+}
+
+ol li.b{
+	font-weight:bold;
+}
+
+div.center{
+	text-align:center;
+}
+
+#page{
+	text-align:right;
+}
+
+
+table#table{
+	border-top:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-collapse:collapse;
+	border-spacing:0;
+	background-color:#ffffff;
+	empty-cells:show;
+	width:100%;
+	margin-bottom:30px;
+}
+table#table th{
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    color:#000000;
+    background-color:#ccccff;
+    background-position:left top;
+    padding:0.3em 1em;
+    text-align:center;
+	font-weight:normal;
+}
+table#table th.w20{
+	width:10px;
+	padding:0px 25px;
+	
+}
+table#table td{
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+	height:50px;
+	padding:0px 3px 0px 3px;
+}
+table#table td.ans{
+	background-color:#e6e6fa;
+	text-align:center;
+}
+.no{
+	background-color:#ccccff;
+	text-align:center;
+}
+
+div#rltBox{
+	width:650px;
+	margin:0 auto;
+}
+div#rltBox p{
+	font-weight:bold;
+	font-size:18px;
+	padding:0;
+	margin:0;
+	
+}
+div#rltBox p.tle{
+	text-align:center;
+	margin:10px;
+}
+div#rltBox p.sub,
+div#rltBox p.tle{
+	text-align:center;
+	margin:10px;
+}
+div#rltBox p.fin2,
+div#rltBox p.fin{
+	font-size:16px;
+	color:red;
+	text-align:center;
+	margin:10px;
+}
+
+div.ansBox{
+	width:40px;
+	height:30px;
+	border:1px solid #ccc;
+	text-align:center;
+	padding-top:10px;
+	margin:5px auto;
+}
+div.ansBox:hover{
+	border:1px solid #808080
+}
+div.on{
+	background-color:#ccc;
+	color:#ffffff;
+}
+
+.center{
+	text-align:center;
+}
+.red{
+	color:red;
+}

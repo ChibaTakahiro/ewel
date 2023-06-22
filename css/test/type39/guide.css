@@ -1,0 +1,204 @@
+hr{
+	border: 0;
+	height: 1px;
+	background: #333;
+	background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+	background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc);
+	background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc);
+	background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+#TimeLeft{
+	text-align:right;
+	font-size:18px;
+	
+}
+ol{
+	font-size:18px;
+}
+ol li{
+	margin-bottom:10px;
+	
+}
+
+ol li.b{
+	font-weight:bold;
+}
+
+div.center{
+	text-align:center;
+}
+
+#page{
+	text-align:right;
+}
+
+
+div#rltBox{
+	width:650px;
+	margin:0 auto;
+}
+div#rltBox p{
+	font-weight:bold;
+	font-size:18px;
+	padding:0;
+	margin:0;
+	text-align:center;
+	margin-bottom:10px;
+}
+div#rltBox p.tle{
+	text-align:center;
+	margin:10px;
+}
+div#rltBox p.sub,
+div#rltBox p.tle{
+	text-align:center;
+	margin:10px;
+}
+div#rltBox p.fin2,
+div#rltBox p.fin{
+	font-size:16px;
+	color:red;
+	text-align:center;
+	margin:10px;
+}
+
+.center{
+	clear:both;
+	text-align:center;
+}
+.red{
+	color:red;
+}
+
+div.questionBox{
+	width:100%;
+	text-align:center;
+}
+div.questionBox p{
+	text-align:left;
+	font-size:18px;
+}
+div.questionBox img{
+	margin:0 auto;
+}
+div.exBox{
+	width:100%;
+	text-align:center;
+	font-size:18px;
+	margin-top:15px;
+	
+}
+
+
+
+
+div.lefts{
+	float:left;
+}
+div.rights{
+	float:right;
+}
+div#codeBox{
+	width:500px;
+	margin:auto;
+	margin-bottom:20px;
+}
+div#codeBox2{
+	width:500px;
+	margin:auto;
+	padding:0px;
+}
+
+
+
+div.number{
+	width:600px;
+	margin:0 auto;
+	margin-top:60px;
+}
+div.title{
+	width:600px;
+	margin:0 auto;
+	
+}
+span.unit{
+	margin-right:10px;
+}
+
+input.box{
+	border:1px solid #000000;
+
+}
+
+
+div.QBox{
+	width:80%;
+	margin:0 auto;
+	font-size:16px;
+	margin-top:20px;
+	
+}
+
+ul.mAns{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+}
+ul.mAns li{
+	float:left;
+	margin-left:30px;
+	width:52px;
+	height:52px;
+	text-align:center;
+}
+ul.mAns li.page2{
+	float:left;
+	margin-left:20px;
+	width:52px;
+	height:52px;
+	text-align:center;
+}
+
+ul.mAns li:hover{
+	background-color:#ccc;
+}
+ul.mAns li.gray{
+	background-color:#ccc;
+}
+div.pos{
+	position:absolute;
+}
+div.radio2,
+div.radio{
+	position:absolute;
+	border:2px solid #ccc;
+	width:50px;
+	height:50px;
+}
+div.mgc{
+	margin-top:13px;
+}
+
+table#table{
+	font-size:16px;
+	margin:0 auto;
+	width:95%;
+}
+table#table td.answer{
+	height:60px;
+	vertical-align:middle;
+}
+table#table td.mgb{
+	margin-bottom:20px;
+	padding-bottom:60px;
+}
+
+div.left{
+	float:left;
+	margin-top:10px;
+}
+div.right{
+	float:right;
+	margin-top:10px;
+}

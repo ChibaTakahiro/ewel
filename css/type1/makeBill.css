@@ -1,0 +1,91 @@
+#divMake{
+	clear:both;
+}
+.dis{
+	background-color:#ccc;
+}
+
+#billsend{
+	clear:both;
+	border-bottom:1px solid #0099ff;
+	padding:5px 0;
+}
+
+#billsend span{
+	margin-left:20px;
+}
+
+
+#billdate{
+	clear:both;
+	border-bottom:1px solid #0099ff;
+	padding:5px 0;
+}
+#billdate input{
+	margin-left:20px;
+	width:100px;
+}
+
+#partner_box{
+	padding-top:5px;
+	float:left;
+	width:280px;
+}
+#customer_box{
+	
+	float:left;
+	width:290px;
+}
+#tester_box{
+	float:left;
+	width:280px;
+}
+
+
+#loading{
+	width:280px;
+}
+#loading3{
+	margin-left:10px;
+}
+#partner{
+	width:280px;
+	border-right:1px solid;
+}
+.radio{
+	display:none;
+}
+.pRadio{
+	border-bottom:1px dotted;
+	width:260px;
+	padding:1px;
+}
+.pRadio:hover{
+	background-color:#ccc;
+}
+#customer{
+	width:290px;
+	border-right:1px solid;
+	padding-left:5px;
+	min-height:800px;
+}
+.cRadio{
+	border-bottom:1px dotted;
+	width:260px;
+	padding:1px;
+}
+.cRadio:hover{
+	background-color:#ccc;
+}
+#tester{
+	margin-left:15px;
+}
+
+.tRadio{
+	border-bottom:1px dotted;
+	width:250px;
+	padding:1px;
+}
+.tRadio:hover{
+	background-color:#ccc;
+}

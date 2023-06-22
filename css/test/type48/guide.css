@@ -1,0 +1,60 @@
+.f18{
+	font-size:18px;
+}
+
+
+ol{
+	font-size:18px;
+}
+ol li{
+	margin-bottom:10px;
+	
+}
+
+ol li.b{
+	font-weight:bold;
+}
+
+div.center{
+	text-align:center;
+}
+.center{
+	clear:both;
+	text-align:center;
+}
+.red{
+	color:red;
+}
+
+div.lefts{
+	float:left;
+}
+div.rights{
+	float:right;
+}
+p.right{
+	text-align:right;
+}
+
+div.number{
+	width:600px;
+	margin:0 auto;
+	margin-top:60px;
+}
+div.title{
+	width:600px;
+	margin:0 auto;
+	
+}
+span.unit{
+	margin-right:10px;
+}
+
+input.box{
+	border:1px solid #000000;
+
+}
+div#guidbox{
+	width:900px;
+	margin:0 auto;
+}

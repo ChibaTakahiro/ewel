@@ -1,0 +1,359 @@
+h3{
+	border-bottom:1px solid #000000;
+	padding:3px 0px;
+	margin:3px 0px;
+}
+h4{
+	border-bottom:1px solid #0066ff;
+	font-weight:normal;
+	font-size:18px;
+	height:30px;
+	border-left:10px solid #0066ff;
+	padding:5px;
+	background-color:#F8F8FF;
+	
+}
+div.center{
+	text-align:center;
+}
+p.mg{
+	margin:0px;
+	padding:10px;
+	font-size:18px;
+}
+div.f21{
+	font-size:21px;
+}
+
+div.qDiv span{
+	font-size:18px;
+	padding-left:3px;
+}
+.checkbox{
+	width:22px;
+	height:22px;
+}
+/*
+ボタンの幅
+*/
+.w150{
+	width:150px;
+}
+.right{
+	text-align:right;
+}
+
+/*
+入力画面selectBox
+*/
+#tensaku_id{
+	width:100%;
+	padding:5px;
+	font-size:18px;
+}
+textarea.textarea{
+	width:98%;
+	height:400px;
+	padding:0px 10px;
+	border:1px solid #ccc;
+	font-size:20.5px;
+	overflow: hidden;
+	line-height: 150%;
+/* テキストエリアに陰をつける */
+    box-shadow: 0.2em 0.2em 0.5em black;
+
+    /* 罫線描画（各ブラウザ対応）*/
+    background-image: -webkit-linear-gradient(left, white 10px, transparent 10px), -webkit-linear-gradient(right, white 10px, transparent 10px), -webkit-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-image: -moz-linear-gradient(left, white 10px, transparent 10px), -moz-linear-gradient(right, white 10px, transparent 10px), -moz-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-image: -ms-linear-gradient(left, white 10px, transparent 10px), -ms-linear-gradient(right, white 10px, transparent 10px), -ms-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-image: -o-linear-gradient(left, white 10px, transparent 10px), -o-linear-gradient(right, white 10px, transparent 10px), -o-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-image: linear-gradient(left, white 10px, transparent 10px), linear-gradient(right, white 10px, transparent 10px), linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-size: 100% 100%, 100% 100%, 100% 31px;
+    /* 淡いグレーで枠線を囲む */
+    border: 1px solid #ccc;
+
+
+
+}
+
+#finish{
+	display:none;
+}
+div#printPattern{
+	position:absolute;
+	width:150px;
+	margin:-60px 0px 0px 8px;
+	display:none;
+	
+}
+.printBtn{
+	height:30px;
+	border:1px solid #ccc;
+	background-color:#ccffff;
+	margin-top:1px;
+}
+.printBtn:hover{
+	background-color:#cccfff;
+}
+
+p.umg{
+	margin:0px;
+	padding:0px;
+}
+p.umg2{
+	margin-bottom:5px;
+	padding-bottom:5px;
+}
+div.box{
+	border:1px solid #ccc;
+	padding:15px;
+	margin-bottom:10px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+
+}
+p.subject{
+	border-bottom:1px dotted #666666;
+	margin-bottom:5px;
+}
+div.half{
+	border:1px solid #ccc;
+	width:48%;
+	float:left;
+	margin:5px;
+	background-color:#ffffaa;
+	padding:3px;
+}
+
+div#tensaku-left{
+	float:left;
+	min-width:200px;
+	margin-right:30px;
+	width:20%;
+	
+}
+div#tensaku-right{
+	float:left;
+	border:1px solid #f5f5dc;
+	border-top:5px solid #f5f5dc;
+	padding:10px;
+	width:70%;
+	position:absolute;
+	background-color:#ffffff;
+	margin-left:300px;
+	margin-top:80px;
+}
+div#tensaku-right:after{
+	clear:both;
+}
+
+ul#tensaku-menu{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	margin-top:40px;
+	margin-left:30px;
+}
+ul#tensaku-menu li{
+	height:150px;
+	width:200px;
+	border-bottom:dotted 1px #000;
+	text-align:center;
+	display:block;
+}
+ul#tensaku-menu li a{
+	height:150px;
+	line-height:150px;
+	width:200px;
+	display:block;
+	font-size:22px;
+	text-decoration:none;
+	color:#696969;
+	font-weight:normal;
+}
+ul#tensaku-menu li a:hover{
+	color:#4682b4;
+}
+div.clearfix{
+	clear:both !important;
+}
+div#notes{
+	clear:both;
+}
+div.buttonArea{
+	clear:both;
+	border-top:1px solid #ccc;
+	margin-top:80px;
+	padding:30px;
+}
+
+.disable{
+	color:#cfcfcf !important;
+	background-color:#f5f5f5 !important;
+	cursor:default !important;
+}
+.disable:hover{
+	color:#cfcfcf !important;
+	background-color:#f5f5f5 !important;
+	cursor:default;
+}
+
+.inline{
+	border:1px solid #ccc;
+	min-width:230px;
+	padding:2px;
+	margin:0px 5px 5px 0px;
+	height:30px;
+	line-height:30px;
+	cursor: pointer;
+	float:left;
+}
+.inline:hover{
+	color:#cfcfcf;
+}
+h5{
+	font-size:22px;
+	padding:0;
+	margin:0;
+}
+div.ansbox{
+	border:3px dotted #ccc;
+	padding:15px;
+	margin-bottom:20px;
+}
+dl.point{
+	font-size:22px;
+}
+dl.point dt{
+	float:left;
+	width:200px;
+}
+div#printbox{
+	position:absolute;
+	margin-left:360px;
+	width:150px;
+	margin-top:-80px;
+	z-index:10;
+	display:none;
+}
+div#printbox ul{
+	margin:0;
+	padding:0;
+	width:150px;
+	height:40px;
+	list-style-type:none;
+}
+div#printbox ul li{
+	height:40px;
+	border:1px dotted #000;
+	text-align:center;
+	background-color:#fff;;
+	
+}
+div#printbox ul li a{
+	display:block;
+	line-height:40px;
+	text-decoration:none;
+	color:#000;
+}
+div#printbox ul li a:hover{
+	background-color:#f0f8ff;
+}
+
+h5.questitles{
+	border-left:3px solid #4169e1;
+	padding:5px;
+	margin-bottom:20px;
+}
+.w260{
+	width:260px;
+}
+p.ques-menu{
+	min-height:80px;
+	padding:0;
+	margin:0;
+	width:280px;
+}
+p.ques-menu label{
+	width:280px;
+	height:100px;
+	display:table-cell;
+	vertical-align:middle;
+	border-bottom:1px solid #000000;
+}
+p.ques-menu:hover{
+	background-color:#fffafa;
+}
+#tensaku-title{
+	font-size:24px;
+	padding:15px;
+	margin:auto;
+	text-align:left;
+	border-bottom:1px solid #cccccc;
+}
+
+div#divTab{
+	width:92%;
+}
+ul#tensaku-tab{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	float:right;
+}
+ul#tensaku-tab li{
+	display:inline-block;
+	border-left:1px solid #f5f5dc;
+	border-top:1px solid #f5f5dc;
+	border-right:1px solid #f5f5dc;
+
+	width:120px;
+	height:80px;
+	text-align:center;
+	vertical-align:middle;
+	line-height:80px;
+}
+ul#tensaku-tab li a{
+	width:100%;
+	height:80px;
+	display:block;
+	font-size:20px;
+	text-decoration:none;
+	color:#000;
+}
+ul#tensaku-tab li a:hover{
+	background-color:#f5f5dc;
+	font-weight:bold;
+}
+
+.disabled{
+	color:#ccc;
+}
+.counter{
+	padding:0;
+	margin:0;
+	font-size:30px;
+	text-align:right;
+	border-bottom:1px solid #ccc;
+	margin-bottom:10px;
+	width:280px;
+}
+.f18{
+	font-size:18px;
+}
+
+#imgIcon{
+	position:absolute;
+	text-align:right;
+	width:100%;
+}
+.required{
+	color:red;
+	border:1px solid #ff0000;
+	padding:3px;
+	margin:5px;
+}
+.readtext{
+	color:red;
+}

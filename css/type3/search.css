@@ -1,0 +1,67 @@
+div#searchTitle{
+	clear:both;
+	border:1px solid #006699;
+	width:100%;
+	background-color:#ccffcc;
+	padding:5px 0 5px 5px;
+}
+table#table{
+	margin-top:10px;
+}
+table#table td{
+	text-align:center;
+}
+
+div#searchBox{
+	clear:both;
+	border:1px solid #ccc;
+	width:100%;
+	box-shadow: 2px 2px 10px #000; /*CSS3*/
+	-moz-box-shadow: 2px 2px 10px #000; /* Firefox—p*/
+	-webkit-box-shadow: 2px 2px 10px #000; /* Google Chrome, Safari—p*/
+	padding:5px;
+	height:80px;
+	position: relative;
+}
+
+div#searchBox h3{
+	margin:0;
+	padding:0;
+	font-size:13px;
+}
+.searchItems {
+	display: table;
+	table-layout: fixed;
+	font-size: 12.5px;
+	margin-top: 5px;
+}
+.itemCell {
+	display: table-cell;
+	width:300px;
+}
+#exam_state {
+	width: 107px;
+}
+#datepicker {
+	width: 100px;
+}
+#datepicker2 {
+	width: 100px;
+}
+.button2{
+	margin-top:0;
+	width:80px;
+	position: absolute;
+	top: 51px;
+	right: 10px;
+}
+
+ul#pageCnt{
+	list-style-type:none;
+	margin:30px 0px;
+}
+ul#pageCnt li{
+	float:left;
+}
+
+

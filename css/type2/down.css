@@ -1,0 +1,33 @@
+div#searchTitle{
+	clear:both;
+	border:1px solid #006699;
+	width:100%;
+	background-color:#ccffcc;
+	padding:5px 0 5px 5px;
+}
+.red{
+	color:red;
+}
+p.p{
+	margin:5px 0px;
+}
+
+.mg{
+	margin:10px 0px;
+}
+table#table th{
+	width:225px;
+}
+table#table td{
+	text-align:center;
+}
+
+div#waku{
+	width:500px;
+	margin:0 auto;
+	
+}
+
+#registlogo{
+	display:none;
+}

@@ -1,0 +1,71 @@
+body {
+	margin: 10px !important;
+	padding: 10px !important;
+}
+body {
+	margin: 0;
+	padding: 0;
+	line-height:1.4;
+	color:#333;
+	font-family:'ÉÅÉCÉäÉI',Meiryo,'ÇlÇr ÇoÉSÉVÉbÉN',sans-serif;
+	font-size:0.9em;
+	height:0% !important;
+}
+div{
+	font-size:28px;
+}
+.buttons{
+	display:none;
+}
+div#testname2,
+div#testname,
+div#title{
+	background-color:#e0ffff;
+	border:1px solid #006699;
+	padding:5px;
+	text-align:center;
+	margin-top:5px;
+	width:95%;
+}
+hr{
+	border: none;
+}
+.break {
+	page-break-before: always;
+
+}
+p#url{
+	font-size:28px;
+}
+
+div#under{
+	margin-top:25px;
+	display:block;
+	font-weight:bold;
+}
+div#memlist,
+div#QRimg,
+div#prints{
+	width:95%;
+
+}
+table.table{
+	font-size:22px;
+	width:95%;;
+}
+
+table.table td{
+	font-size:22px;
+}
+#printDiv{
+	display:none;
+}
+img#QRCODE{
+	width:200px;
+}
+
+#footer{
+	display:none;
+}
+
+

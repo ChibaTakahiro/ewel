@@ -1,0 +1,59 @@
+div#searchTitle{
+	clear:both;
+	border:1px solid #006699;
+	width:100%;
+	background-color:#ccffcc;
+	padding:5px 0 5px 5px;
+}
+.red{
+	color:red;
+}
+p.p{
+	margin:5px 0px;
+}
+table#table{
+	margin-top:10px;
+	font-size:12px;
+}
+
+table#table th.w10{
+	width:10px;
+}
+table#table td{
+	text-align:center;
+	
+}
+table#table td input{
+	border:1px solid #ccc;
+}
+table#table td select{
+	padding:2px;
+	border:1px solid #ccc;
+}
+.mg{
+	text-align:center;
+	width:180px;
+	margin:0 auto;
+	padding:0px;
+}
+.button2{
+	margin:0;
+	padding:0;
+}
+.w80{
+	width:80px;
+}
+
+div.indent{
+	text-indent:-9999px;
+	position:absolute;
+	z-index:-1;
+}
+
+#img{
+	padding:3px;
+	width:500px;
+}
+#formBox{
+	padding:10px 0px;
+}

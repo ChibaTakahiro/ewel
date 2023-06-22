@@ -1,0 +1,26 @@
+div#title{
+	width:100%;
+	border:1px solid #006699;
+	background-color:#ccffcc;
+	padding:5px;
+	margin:5px 0;
+}
+div#contents{
+	width:100%;
+	
+}
+
+
+h3{
+	margin-top:20px;
+	margin-bottom:10px;
+}
+
+.rlt{
+	text-align:center;
+}
+.rltWord{
+	color:red;
+	font-size:22px;
+}
+

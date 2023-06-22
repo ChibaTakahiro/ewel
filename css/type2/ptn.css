@@ -1,0 +1,144 @@
+div#divLeft{
+	clear:both;
+	float:left;
+	width:680px;
+
+}
+div#divRight{
+	float:right;
+	width:180px;
+}
+table#table{
+	margin-top:20px;
+}
+.auto{
+	margin:0 auto;
+	text-align:center;
+	width:100%;
+}
+
+table#lisenceTbl{
+	border-top:1px solid #006699;
+    border-left:1px solid #006699;
+    border-collapse:collapse;
+    border-spacing:0;
+    background-color:#ffffff;
+    empty-cells:show;
+	width:100%;
+}
+table#lisenceTbl th{
+	border-right:1px solid #006699;
+	border-bottom:1px solid #006699;
+	color:#000000;
+	background-color:#e0e0ff;
+	background-position:left top;
+	padding:0.3em 1em;
+	text-align:center;
+	font-size:11.5px;
+	height:30px;
+	
+}
+
+table#lisenceTbl td{
+	border-right:1px solid #006699;
+    border-bottom:1px solid #006699;
+	text-align:right;
+	padding:3px;
+}
+
+table#lisenceTbl td.left{
+	text-align:left;
+}
+table#table td.center{
+	text-align:center;
+}
+
+ul.ulmenu.w2{
+	margin:0 auto;
+	width:230px;
+	text-align:center;
+}
+
+
+ul.ptnmenu{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+
+}
+ul.ptnmenu li{
+	list-style-type:none;
+	border:1px solid #cccccc;
+
+	width:172px;
+	margin-right:6px;
+	margin-bottom:5px;
+	text-align:center;
+
+}
+ul.ptnmenu li a{
+	display:block;
+	height:100%;
+	font-size:14px;
+	text-decoration: none;
+	color:#ffffff;
+	background-color:#8080ff;
+	padding:3px;
+}
+ul.ptnmenu li a:hover{
+	background-color:#c0c0ff;
+	color:#000000;
+}
+
+#mg10{
+	margin-bottom:30px;
+}
+/*-----------------------
+ページャー
+-------------------------*/
+ul.pager{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	margin:15px auto;
+	width:300px;
+}
+ul.pager li{
+	float:left;
+	margin-right:10px;
+	width:100px;
+	text-align:center;
+	border:1px solid #ccc;
+	background-color:#4169e1;
+	color:#666666;
+}
+ul.pager li.dis{
+	background-color:#b0c4de;
+}
+ul.pager li a{
+	display:block;
+	width:100%;
+	text-decoration:none;
+	color:#ffffff;
+	
+}
+ul.pager li a:hover{
+	color:#ff4500;
+}
+
+.d{
+	text-align:center;
+	font-size:12px;
+	padding:3px 0px;
+	color:#ccc;
+	
+}
+
+.disp{
+	display:none;
+	position:absolute;
+	border:1px solid #ccc;
+	background-color:#ffffff;
+	padding:5px;
+	width:300px;
+}

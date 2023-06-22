@@ -1,0 +1,84 @@
+/*中央寄せ*/
+div#loginform{
+	position:absolute;
+	left:50%;
+	top:30%;
+	margin-left:-250px;
+	margin-top:-50px;
+	background:#fff;
+	color:#999;
+}
+
+/*ログインボックス*/
+#loginbtn{
+	background-image:url("/images/loginbutton.gif");
+	width:160px;
+	height:40px;
+	border:none;
+	text-indent:-9999px;
+	display:block;
+	line-height: 0px;
+	margin:10px;
+	
+}
+#loginbtn:hover,
+#loginbtn:focus {
+	background-image:url("/images/loginbutton.gif");
+	background-position:0px -40px;
+}
+
+.logintext{
+	height:35px;
+	width:200px;
+	background-repeat:no-repeat;
+	font-size:16px;
+	padding-left:5px;
+	padding-right:20px;
+	padding-top:3px;
+	font-weight:bold;
+	border:1px solid #ccc;
+	background-color:#ffffff;
+}
+
+/*ログインテーブル*/
+table#logtbl{
+	width:500px;
+	margin:0 auto;
+	
+}
+table#logtbl td{
+	height:70px;
+	font-weight:normal;
+	text-align:left;
+	color:#808080;
+	font-size:18px;
+	vertical-align:bottom;
+	padding:0px;
+}
+table#logtbl td input.w40{
+	width:60px;
+	height:40px;
+	font-size:20px;
+	padding:2px;
+	border:1px solid #ccc;
+	margin-right:3px;
+	margin:0;
+	vertical-align:top;
+}
+
+table#logtbl td select{
+
+	width:60px;
+	height:45px;
+	font-size:20px;
+	padding:2px;
+	border:1px solid #ccc;
+	margin-right:3px;
+
+}
+
+
+
+p{
+	font-size:20px;
+}

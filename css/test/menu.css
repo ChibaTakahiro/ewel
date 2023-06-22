@@ -1,0 +1,101 @@
+ul#testMenu{
+	list-style:none;
+	font-size:28px;
+	width:400px;
+	margin:0px auto;
+}
+ul#testMenu li{
+	margin-bottom:15px;
+}
+ul#testMenu li a{
+	display: block;
+	width:100%;
+	color: #ffffff;
+	background-color: #E0ffff;  /* 背景色 */
+	border:1px solid #ccc;
+	font-size: 30px;            /* フォントサイズ */
+	text-align: center;         /* 水平揃え */
+	text-decoration: none;      /* 下線を消す */
+	color:#000000;
+}
+
+ul#testMenu li.not{
+	width:100%;
+	background-color: #E0ffff;  /* 背景色 */
+	font-size: 30px;            /* フォントサイズ */
+	text-align: center;         /* 水平揃え */
+	text-decoration: none;      /* 下線を消す */
+	color:#ccc;
+	padding-left:20px;
+	background-image:url("../../t/image/sumi.gif");
+	background-repeat:no-repeat;
+	background-position:10px;
+}
+ul#testMenu li.not2{
+	width:100%;
+	background-color: #E0ffff;  /* 背景色 */
+	font-size: 30px;            /* フォントサイズ */
+	text-align: center;         /* 水平揃え */
+	text-decoration: none;      /* 下線を消す */
+	color:#ccc;
+	padding-left:20px;
+	background-repeat:no-repeat;
+	background-position:10px;
+}
+.op{
+	opacity: 0.5;
+}
+
+
+ul#testMenu li a:hover {
+	background-color: #00B1BB;  /* 背景色 */
+	border:1px dotted  #ccc;
+	margin: 0px;
+	color:#FFFFFF;
+
+}
+#explain{
+	width:450px;
+	margin:0 auto;
+	font-size:16px;
+	
+}
+
+
+#enqBox{
+	width:700px;
+	margin:0 auto;
+	
+}
+
+div.enq{
+	margin-bottom:20px;
+	
+}
+
+.red{
+	color:red;
+	text-decoration:underline;
+}
+
+ul.ulanq{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	margin-left:20px;
+}
+.mg{
+	margin:0;
+	padding:0;
+}
+.mg2{
+	margin:0;
+	padding:0;
+	margin-left:20px;
+}
+.w300{
+	width:500px;
+}
+#disp2{
+	display:none;
+}

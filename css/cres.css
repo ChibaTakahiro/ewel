@@ -1,0 +1,50 @@
+.mt20{ margin-top:20px !important;}
+.w100p{width:100% !important; }
+div.box{
+    border:1px solid #ccc;
+    padding:10px;
+    width:60%;
+    margin:0 auto;
+}
+table th{
+    text-align: center;
+    vertical-align:middle !important;
+    background-color: darkslateblue;
+    color:#fff;
+}
+table th:nth-child(1){width:100px !important;}
+table th:nth-child(2){width:60px !important;}
+table th:nth-child(3){width:120px !important;}
+table th:nth-child(4){width:120px !important;}
+table th:nth-child(5){width:120px !important;}
+table th:nth-child(6){width:120px !important;}
+table th:nth-child(7){width:120px !important;}
+table th:nth-child(8){width:120px !important;}
+table th:nth-child(9){width:120px !important;}
+table th:nth-child(10){width:120px !important;}
+table th:nth-child(11){width:120px !important;}
+table th:nth-child(12){width:350px !important;}
+table th:nth-child(13){width:350px !important;}
+table th:nth-child(14){width:350px !important;}
+table td{
+    vertical-align: middle !important;
+}
+table th.w200{
+    width:200px !important;
+}
+
+textarea {
+    resize: none;
+}
+
+p.message{
+    padding:5px;
+    color:red;
+}
+.pd0{
+    padding:0 !important;
+    padding-top:8px !important;
+}
+.bg-dark{
+    background-color:#ccc !important;
+}

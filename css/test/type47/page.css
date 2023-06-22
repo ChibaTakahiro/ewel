@@ -1,0 +1,129 @@
+div#waku{
+	width:680px;
+	margin:0 auto;
+}
+.f16{
+	font-size:16px;
+}
+.yellow{
+	background-color:#ffff80;
+}
+.mt40{
+	margin-top:40px;
+}
+.pl40{
+	padding-left:40px;
+}
+.pt20{
+	padding-top:20px;
+}
+.pt40{
+	padding-top:40px;
+}
+.mt80{
+	margin-top:80px;
+}
+.disp1{
+	margin-left:200px;
+}
+.disp2{
+	margin-left:250px;
+}
+.disp3{
+	margin-left:400px;
+}
+
+ul.question{
+	list-style-type:none;
+}
+ul.question  li{
+	float:left;
+	margin-left:10px;
+}
+div.clearfix:after{
+	clear:both;
+	display:block;
+	overflow:hidden;
+	content:" ";
+}
+p.left{
+	float:left;
+}
+span.bord{
+	border:1px solid #000;
+	width:100px;
+	display: inline-block;
+}
+div.marginC{
+	width:600px;
+	margin:0 auto;
+}
+ul.ulmove{
+	list-style-type:none;
+}
+ul.ulmove li{
+	float:left;
+}
+ul.ulmove li.act{
+	width:60px;
+}
+ul.ulmove li.actIn{
+	width:450px;
+}
+p.pg4_useful1{
+	position:absolute;
+	margin-left:180px;
+}
+p.pg4_useful2{
+	position:absolute;
+	margin-left:600px;
+
+}
+/*--------------------------------
+Ž¿–â•\Ž¦table
+---------------------------------*/
+table.qtable{
+	width:600px;
+	margin:0 auto;
+}
+table.qtable.w500{
+	width:500px;
+}
+table.qtable th{
+	width:160px;
+	height:50px;
+	text-align:left;
+}
+table.qtable td{
+	text-align:center;
+}
+table.qtable td div.rd{
+	display:block;
+	width:80px;
+	height:50px;
+	display:table-cell;
+	vertical-align:middle;
+	border:1px solid #000;
+}
+table.qtable td.w200{
+	width:150px;
+}
+table.qtable td div.rd input{
+	display:none;
+}
+table.qtable td.tleft{
+	text-align:left;
+}
+table.qtable td.ht{
+	height:80px;
+	vertical-align:top;
+}
+input.w30{
+	width:30px;
+	height:30px;
+}
+div.txt{
+	height:35px;
+	line-height:35px;
+	margin-left:20px;
+}

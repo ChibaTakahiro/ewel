@@ -1,0 +1,31 @@
+div#contents{
+	width:100%;
+}
+div#searchTitle{
+	clear:both;
+	border:1px solid #006699;
+	width:100%;
+	background-color:#ccffcc;
+	padding:5px 0 5px 5px;
+}
+.red{
+	color:red;
+}
+
+ul#ulmenu{
+	width:100%;
+    font-size:16px;
+    padding-left:0;
+    margin-left:0;
+}
+ul#ulmenu li{
+	list-style:none;
+    margin-top:10px;
+	border-bottom:1px dotted #ccc;
+	padding-left:5px;
+	
+}
+.mg10{
+	margin-top:10px;
+	margin-bottom:10px;
+}

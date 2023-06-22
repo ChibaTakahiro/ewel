@@ -1,0 +1,48 @@
+#mlogo{
+	text-align:center;
+}
+#m_main{
+	width:100%;
+	font-size:12px;
+}
+#year{
+	width:40px;
+}
+p{
+	font-size:18px;
+}
+.red{
+	color:red;
+}
+ol.m_ol{
+	font-size:12px;
+	
+}
+div#m_rltBox{
+	font-size:12px;
+}
+#m_fin2{
+	color:red;
+}
+#m_fin{
+	color:red;
+}
+div#mTitle{
+	font-size:16px;
+}
+div#m_title{
+	font-size:16px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	padding:3px 0px 3px 3px;
+	font-size:14px;
+	background-color:#ccffff;
+}
+
+.mtle{
+	text-align:center;
+	
+}
+.rltWord{
+	color:red;
+}

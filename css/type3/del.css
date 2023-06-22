@@ -1,0 +1,22 @@
+div#dataTitle{
+	clear:both;
+	border:1px solid #006699;
+	width:100%;
+	background-color:#ccffcc;
+	padding:5px 0 5px 5px;
+}
+span.red{
+	color:red;
+}
+p.mg10{
+	margin:10px 0px 10px 0px;
+}
+.w150{
+	width:150px;
+}
+p.delMsg{
+	margin:auto 0;
+	text-align:center;
+	
+	margin:5px 0px;
+}

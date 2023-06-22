@@ -1,0 +1,60 @@
+.red{
+	color:red;
+}
+.w600{
+	width:600px;
+}
+.center{
+	text-align:center;
+}
+table#table{
+	
+}
+table#table th{
+	text-align:left;
+	width:200px;
+}
+table#table th.center{
+	text-align:center;
+}
+table#table th.w10{
+	width:10px;
+}
+table#table td{
+	text-align:left;
+}
+select{
+	padding:3px;
+	width:300px;
+}
+#message{
+	width:80%;
+	height:50px;
+	padding:2px;
+}
+
+
+#dispStore{
+	position:absolute;
+	z-index:1;
+	border:1px solid ;
+	background-color:#ccc;
+	padding:5px;
+	width:400px;
+	overflow:scroll;
+	height:400px;
+	display:none;
+}
+
+.divStore{
+	text-align:right;
+	color:blue;
+	font-size:12px;
+}
+.divStoreDist{
+	border:1px solid #ccc;
+	padding:3px;
+	display:none;
+	position:absolute;
+	background-color:#ffffff;
+}

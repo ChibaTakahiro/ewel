@@ -1,0 +1,138 @@
+div.inline{
+	display: inline-block;
+	_display: inline;
+}
+span.box{
+	border:1px solid #000000;
+	display: inline-block;
+	_display: inline;
+	width:80px;
+	margin:0px;
+	padding:3px; 0px;
+}
+div.sBox{
+	border:1px solid #000000;
+	width:100%;
+}
+div.sBox table{
+	width:100%;
+	padding:5px;
+}
+div.sBox table th{
+	font-weight:normal;
+}
+div.sBox table td{
+	width:160px;
+}
+
+table.ansTable{
+	margin-top:30px;
+	width:730px;
+}
+table.w400{
+	width:400px;
+}
+table.ansTable td.anstd{
+	width:50px;
+	height:30px;
+	border:1px solid #ccc;
+	text-align:center;
+}
+table.ansTable td.check{
+	background-color:#ffff00;
+}
+.hid{
+	text-indent:-9999px;
+	margin:0px;
+	padding:0px;
+	position:absolute;
+}
+p.num{
+	float:left;
+	width:30px;
+}
+p.ques{
+	float:left;
+	width:860px;
+}
+
+/*--------------------
+3ページ～の処理
+----------------------*/
+ul.ul13{
+	list-style-type: none;
+}
+ul.ul13 li{
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	clear:both;
+
+}
+ul.ul13 li p{
+	margin:0;
+	padding:0;
+	float:left;
+}
+input.chk13{
+	width:20px;
+	height:20px;
+	float:left;
+}
+
+
+/*--------------------
+10ページの処理
+----------------------*/
+table.qTable{
+	border:1px solid #000000;
+	border-collapse: collapse;
+	width:800px;
+	margin:0 auto;
+}
+table.qTable th{
+	font-weight:normal;
+	padding:3px;
+	border:1px solid #000000;
+}
+table.qTable td{
+	padding:3px;
+	border:1px solid #000000;
+}
+ul.ul51{
+	list-style-type: none;
+	padding:5px;
+	margin:5px;
+}
+
+/*--------------------
+回答一覧
+----------------------*/
+table.answerList{
+	width:100px;
+	border:1px solid #000000;
+	border-collapse: collapse;
+	float:left;
+	margin-right:10px;
+}
+table.answerList th{
+	font-weight:normal;
+	padding:3px;
+	border:1px solid #000000;
+	width:33px;
+	background-color:#4169e1;
+	color:#ffffff;
+}
+table.answerList td{
+	padding:3px;
+	border:1px solid #000000;
+	background-color:#e6e6fa;
+}
+table.answerList td.bg{
+	background-color:#f5fffa;
+}
+div#ansBox{
+	width:500px;
+	margin:0 auto;
+}
+

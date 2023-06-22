@@ -1,0 +1,161 @@
+.f18{
+	font-size:18px;
+}
+h3#exTitle{
+	background-image:url("/images/check.gif");
+	background-repeat:no-repeat;
+	padding-left:60px;
+	padding-top:10px;
+	height:50px;
+	font-size:26px;
+	margin:5px 0px;
+}
+.mg0{
+	margin:0px;
+}
+hr{
+	border: 0;
+	height: 1px;
+	background: #333;
+	background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+	background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc);
+	background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc);
+	background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+ol{
+	font-size:18px;
+}
+ol li{
+	margin-bottom:10px;
+	
+}
+
+ol li.b{
+	font-weight:bold;
+}
+
+div.center{
+	text-align:center;
+}
+
+#page{
+	text-align:right;
+}
+
+
+table#table{
+	border-top:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-collapse:collapse;
+	border-spacing:0;
+	background-color:#ffffff;
+	empty-cells:show;
+	width:100%;
+}
+table#table th{
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    color:#ffffff;
+    background-color:#0066FF;
+    background-position:left top;
+    padding:0.3em 1em;
+    text-align:center;
+	font-weight:normal;
+	width:50%;
+}
+table#table td{
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+	padding:5px;
+}
+p.exp{
+	height:80px;
+	margin:0;
+	padding:0;
+}
+
+div.thumb {
+	height:300px;
+	margin:0 auto;
+	width:100%
+}
+div.thumb img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 300px;
+	width: 410px;
+	margin-left:15px;
+	overflow: hidden;
+	
+}
+#explain{
+	font-size:18px;
+	
+}
+ul#ansLine{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+ul#ansLine li{
+	list-style:none;
+	border-bottom:1px dotted #ccc;
+	font-size:24px;
+	width:100%;
+	display:block;
+	padding:5px 0px 5px 5px;
+}
+ul#ansLine li:hover{
+	background-color:#FFFF99;
+}
+
+ul#ansLine li img{
+	margin-right:10px;
+}
+
+.no{
+	background-color:#ccccff;
+	text-align:center;
+}
+#ex{
+	color:red;
+	text-align:right;
+	margin:0;
+	padding:0;
+}
+div#rltBox{
+	width:650px;
+	margin:0 auto;
+}
+div#rltBox p{
+	font-weight:bold;
+	font-size:18px;
+	padding:0;
+	margin:0;
+	text-align:center;
+	
+}
+div#rltBox p.tle{
+	text-align:center;
+	margin:10px;
+}
+div#rltBox p.sub,
+div#rltBox p.tle{
+	text-align:center;
+	margin:10px;
+}
+div#rltBox p.fin2,
+div#rltBox p.fin{
+	font-size:16px;
+	color:red;
+	text-align:center;
+	margin:10px;
+}
+
+.center{
+	text-align:center;
+}
+.red{
+	color:red;
+}
