@@ -14,15 +14,18 @@ $oplist = new ptnListMethod();
 
 require("./lib/PHPMailer/class.phpmailer.php");
 $mail = new PHPMailer();
+$offset = 30;
 
 
 $where = array();
 $where['id'] = $id;
 $where['basetype'] = $basetype;
 $limit = array();
-$row = $oplist->getUserDataPartner($limit, $where, "row");
+//$row = $oplist->getUserDataPartner($limit, $where, "row");
+$row = $oplist->getUserRow( $where );
 $offset = 30;
 $ceil = ceil($row / $offset) - 1;
+
 
 //パートナー用データ
 $where = array();

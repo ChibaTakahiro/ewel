@@ -78,6 +78,9 @@ include_once("include_header.php");
 			}
 	
 ?>
+			<div>
+				<input type="text" name="tekikaku" value="<?=$company['10']?>" style="width:100%;">
+			</div>
 			<div id="syahan" style="display:<?=$disp?>" ><img src="/images/innovation.gif"></div>
 			<p id="billaddress">
 			〒<input type="text" name="post1" value="<?=$company['1']?>"  maxlength=3 id="company_post1" >-

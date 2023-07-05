@@ -78,7 +78,7 @@
 	// 軸の日本語化と色設定
 	$graph->axis->SetFont(FF_GOTHIC);
 	$graph->axis->title->SetFont(FF_GOTHIC);
-	$graph->axis->SetColor("#207870");
+	$graph->axis->SetColor("#000000"); // 軸の色
 
 	// 中心から放射状に伸びる線の太さ
 	$graph->axis->SetWeight(3);
@@ -134,7 +134,11 @@
 	//$average = '平均値';
 	//$plot->SetLegend($average);
 	$plot->SetLineWeight(2);
-	$plot->SetColor('red', 'lightred');
+	//$plot->SetColor('blue', 'lightblue');
+
+	$plot->SetColor('blue@1.0');
+
+
 	$plot->SetFill(false);
 
 
@@ -150,8 +154,7 @@
 	//$plot2->SetFont(FF_GOTHIC, FS_NORMAL);
 
 	// 点を丸くする
-	$plot->mark->SetType(MARK_IMG_SBALL,'red');
-
+	$plot->mark->SetType(MARK_IMG_SBALL,'navy');
 	// 描画
 	//$graph->Add($plot2);
 	$graph->Add($plot);
@@ -190,7 +193,8 @@
 		$pdf->Image("./images/welcome.jpg", 10,5,50,25);
 	}
 
-	$pdf->SetXY(28, 30); 
+	$pdf->SetFontSize(12);
+	$pdf->SetXY(28, 28); 
 	$pdf->Write(0, $testdata[ 'cusname' ]);
 
 	$pdf->SetFontSize(8);
@@ -207,7 +211,7 @@
 	$pdf->Write(0, $testdata[ 'name' ]);
 
 	$age = getAgeCalc($testdata[ 'birth' ],$testdata[ 'exam_dates' ]);
-	$pdf->SetXY(183, 35.5);
+	$pdf->SetXY(190, 35.5);
 	$pdf->Write(0, $age);
 
 	$pdf->SetXY(10, 52);
@@ -216,16 +220,17 @@
 	$pdf->Write(0, sprintf("%.1f",$testdata['score']));
 	$pdf->SetXY(45.5, 52);
 	$pdf->Write(0, $testdata['level']);
-	$pdf->Image($img1_bar, 52, 52);
+	if($testdata['score'] != 20){
+		$pdf->Image($img1_bar, 52, 52);
+	}
 
-
-	$pdf->SetXY(10, 58);
+	$pdf->SetXY(10, 58.5);
 	$pdf->Write(0, "ストレス共生力");
-	$pdf->SetXY(33, 58);
+	$pdf->SetXY(33, 58.5);
 	$pdf->Write(0, sprintf("%.1f",$st_score));
-	$pdf->SetXY(45.5, 58);
+	$pdf->SetXY(45.5, 58.5);
 	$pdf->Write(0, $st_level);
-	$pdf->Image($img2_bar, 52, 58);
+	$pdf->Image($img2_bar, 52, 58.5);
 
 
 	$pdf->SetXY(10.5, 77);
@@ -297,47 +302,218 @@
 	$pdf->Image($gimg1, 35, 95,136);
 
 	$pdf->SetXY(83, 98);
-	// $pdf->SetFillColor(162, 199, 255);
-	// $pdf->SetDrawColor(128, 128, 128);
 
+	/*
+	if($testweight[0][ 'w1' ] != 0){
+		$pdf->Cell(50,8,andReplace($elem[ 'e_feel' ]),0,0,'C',false);
+	}else{
+		$pdf->SetFillColor(162, 199, 255);
+		$pdf->SetDrawColor(128, 128, 128);
+		//$pdf->Cell(横幅,縦幅,テキスト,境界線,0,位置,塗りつぶし);
+		$pdf->Cell(50,8,andReplace($elem[ 'e_feel' ]),1,0,'C',true);
+	}
+	*/
+
+	$pdf->SetFillColor(162, 199, 255);
+	$pdf->SetDrawColor(128, 128, 128);
+	$ht = 5;
+	$border = 0;
+	$fill = false;
+	$pos = "C";
+	if($testweight[0][ 'w1' ] != 0){
+		$border=1;
+		$fill = true;
+		$pos = "C";
+	}
 	//$pdf->Cell(横幅,縦幅,テキスト,境界線,0,位置,塗りつぶし);
-	$pdf->Cell(50,10,andReplace($elem[ 'e_feel' ]),0,0,'C',false);
+	$w = mb_strlen($elem[ 'e_feel' ])*4;
+	$pdf->Cell($w,$ht,andReplace($elem[ 'e_feel' ]),$border,0,$pos,$fill);
+
+	$border = 0;
+	$fill = false;
+	$pos = "L";
+	if($testweight[0][ 'w2' ] != 0 ){
+		$border=1;
+		$fill = true;
+		$pos = "L";
+	}
+	$w = mb_strlen($elem[ 'e_cus' ])*4;
 	$pdf->SetXY(125, 109);
-	$pdf->Cell(50,10,andReplace($elem[ 'e_cus' ]),0,0,'L',false);
+	$pdf->Cell($w,$ht,andReplace($elem[ 'e_cus' ]),$border,0,$pos,$fill);
+	
+	
+	$border = 0;
+	$fill = false;
+	$pos = "L";
+	if($testweight[0][ 'w3' ] != 0 ){
+		$border=1;
+		$fill = true;
+		$pos = "L";
+	}
+	$w = mb_strlen($elem[ 'e_aff' ])*4;
 	$pdf->SetXY(143, 126);
-	$pdf->Cell(50,10,andReplace($elem[ 'e_aff' ]),0,0,'L',false);
-	$pdf->SetXY(148, 148);
-	$pdf->MultiCell(50,10,andReplace($elem[ 'e_cntl' ]),1,0,'L',false);
+	$pdf->Cell($w,$ht,andReplace($elem[ 'e_aff' ]),$border,0,$pos,$fill);
+
+
+	$border = 0;
+	$fill = false;
+	$pos = "L";
+	if($testweight[0][ 'w4' ] != 0 ){
+		$border=1;
+		$fill = 1;
+		$pos = "C";
+	}
+	$w = mb_strlen($elem[ 'e_cntl' ])*4;
+	if($w > 40) $w = 40;
+	$pdf->SetXY(148, 147);
+	$pdf->Cell($w,10,"",$border,0,$pos,$fill);
+	$string = andReplace($elem[ 'e_cntl' ],true);
+	foreach($string as $k=>$val){
+		$pdf->Text(148,148+4*$k,andReplace($val));
+	}
+
+
+
+
+	$border = 0;
+	$fill = false;
+	$pos = "L";
+	if($testweight[0][ 'w5' ] != 0 ){
+		$border=1;
+		$fill = 1;
+		$pos = "C";
+	}
 	$pdf->SetXY(143, 171);
-	$pdf->MultiCell(50,10,andReplace($elem[ 'e_vi' ]),1,0,'L',false);
+	$w = mb_strlen($elem[ 'e_vi' ])*4;
+	if($w > 40) $w = 40;
+	$pdf->Cell($w,$ht,andReplace($elem[ 'e_vi' ]),$border,0,$pos,$fill);
+
+
+	
+	$border = 0;
+	$fill = false;
+	$pos = "L";
+	if($testweight[0][ 'w6' ] != 0 ){
+		$border=1;
+		$fill = 1;
+		$pos = "L";
+	}
+	$w = mb_strlen($elem[ 'e_pos' ])*4;
+	if($w > 40) $w = 40;
 	$pdf->SetXY(127, 189);
-	$pdf->MultiCell(50,10,andReplace($elem[ 'e_pos' ]),1,0,'L',false);
+	$pdf->Cell($w,$ht,andReplace($elem[ 'e_pos' ]),$border,0,$pos,$fill);
+
+
+
+	$border = 0;
+	$fill = false;
+	$pos = "C";
+	if($testweight[0][ 'w7' ] != 0 ){
+		$border=1;
+		$fill = 1;
+		$pos = "C";
+	}
+	$w = mb_strlen($elem[ 'e_symp' ])*4;
+	if($w > 40) $w = 40;
 	$pdf->SetXY(93, 195);
-	$pdf->MultiCell(50,10,andReplace($elem[ 'e_symp' ]),1,0,'C',false);
-	$pdf->SetXY(62, 187);
-	$pdf->MultiCell(50,10,andReplace($elem[ 'e_situ' ]),1,0,'L',false);
-	$pdf->SetXY(40, 171);
-	$pdf->MultiCell(50,10,andReplace($elem[ 'e_hosp' ]),1,0,'L',false);
-	$pdf->SetXY(35, 150);
-	$pdf->MultiCell(50,10,andReplace($elem[ 'e_lead' ]),1,0,'L',false);
-	$pdf->SetXY(40, 126);
-	$pdf->MultiCell(50,10,andReplace($elem[ 'e_ass' ]),1,0,'L',false);
+	$pdf->Cell($w,$ht,andReplace($elem[ 'e_symp' ]),$border,0,$pos,$fill);
+
+
+
+	$border = 0;
+	$fill = false;
+	$pos = "R";
+	if($testweight[0][ 'w8' ] != 0 ){
+		$border=1;
+		$fill = 1;
+		$pos = "C";
+	}
+	$w = mb_strlen($elem[ 'e_situ' ])*4;
+	$pdf->SetXY(55, 187);
+	$pdf->Cell($w,$ht,andReplace($elem[ 'e_situ' ]),$border,0,$pos,$fill);
+
+
+
+	$border = 0;
+	$fill = false;
+	$pos = "R";
+	if($testweight[0][ 'w9' ] != 0 ){
+		$border=1;
+		$fill = 1;
+		$pos = "C";
+	}
+	$w = mb_strlen($elem[ 'e_hosp' ])*4;
+	$pdf->SetXY(30, 171);
+	$pdf->Cell($w,$ht,andReplace($elem[ 'e_hosp' ]),$border,0,$pos,$fill);
+
+
+
+	$border = 0;
+	$fill = false;
+	$pos = "R";
+	if($testweight[0][ 'w10' ] != 0 ){
+		$border=1;
+		$fill = 1;
+		$pos = "C";
+	}
+	$w = mb_strlen($elem[ 'e_lead' ])*4;
+	$pdf->SetXY(25, 150);
+	$pdf->Cell($w,$ht,andReplace($elem[ 'e_lead' ]),$border,0,$pos,$fill);
+
+
+
+	$border = 0;
+	$fill = false;
+	$pos = "R";
+	if($testweight[0][ 'w11' ] != 0 ){
+		$border=1;
+		$fill = 1;
+		$pos = "C";
+	}
+	$w = mb_strlen($elem[ 'e_ass' ])*4;
+	$pdf->SetXY(35, 126);
+	$pdf->Cell($w,$ht,andReplace($elem[ 'e_ass' ]),$border,0,$pos,$fill);
+
+
+	$border = 0;
+	$fill = false;
+	$pos = "R";
+	if($testweight[0][ 'w12' ] != 0 ){
+		$border=1;
+		$fill = 1;
+		$pos = "C";
+	}
+	$w = mb_strlen($elem[ 'e_adap' ])*4;
 	$pdf->SetXY(62, 111);
-	$pdf->MultiCell(50,10,andReplace($elem[ 'e_adap' ]),1,0,'L',false);
+	$pdf->Cell($w,$ht,andReplace($elem[ 'e_adap' ]),$border,0,$pos,$fill);
 
 
-	function andReplace($str){
+	function andReplace($str,$array = false){
 		$str = str_replace("＆","&",$str);
-		$str = str_replace("&","&\n",$str);
+		if($array == true){
+			$str = explode("&",$str);
+		}else{
+			
+			$str = str_replace("&","&\n",$str);
+		}
 		return $str;
 	}
 
-	$pdf->Image("./pdfTemplates/taijineikyo.png",18,100,30);
-	$pdf->Image("./pdfTemplates/jikoninti.png",160,100,30);
-	$pdf->Image("./pdfTemplates/taijinninti.png",18,180,30);
-	$pdf->Image("./pdfTemplates/jikoantei.png",160,180,30);
+	$pdf->Image("./pdfTemplates/waku.png",18,100,30);
+	$pdf->Image("./pdfTemplates/waku.png",160,100,30);
+	$pdf->Image("./pdfTemplates/waku.png",18,180,30);
+	$pdf->Image("./pdfTemplates/waku.png",160,180,30);
+	$pdf->SetFontSize(11);
+	$pdf->SetXY(22, 102);
+	$pdf->Write(0, "対人影響力");
+	$pdf->SetXY(22, 182);
+	$pdf->Write(0, "対人認知力");
+	$pdf->SetXY(164, 102);
+	$pdf->Write(0, "自己認知力");
+	$pdf->SetXY(164, 182);
+	$pdf->Write(0, "自己安定力");
 
-
+	$pdf->SetFontSize(8);
 	$pdf->SetXY(140, 198);
 	$pdf->Cell(60, 8, '御社が重視している行動価値', '1', '1', 'C', false, '', '');
 	$pdf->SetXY(143, 200);
@@ -345,7 +521,7 @@
 	$pdf->Cell(6, 2, ' ', '0', '0', 'C', true, '', '');
 
 
-	$pdf->SetXY(13,212);
+	$pdf->SetXY(13,211);
 	$pdf->Write(0, $testdata['name']."さんへの質問例");
 
 	$devlist = array(
@@ -419,12 +595,12 @@
 		$keys[] = $k;
 	}
 
-	$pdf->MultiCell(40, 40,$a_questions[$keys[0]] ,"1","L",false,0,10,221,true,0,true,'M');
+	$pdf->MultiCell(45, 40,$a_questions[$keys[0]] ,"1","C",false,0,10,234,true,0,true,'M');
 	$pdf->MultiCell(38, 40,$array_pdf_question[$keys[0]][0],"1","L",false,0,55,221,true,0,true,'M');
 	$pdf->MultiCell(52, 40,$array_pdf_question[$keys[0]][1],"1","L",false,0,91,221,true,0,true,'M');
 	$pdf->MultiCell(56, 40,$array_pdf_question[$keys[0]][2],"1","L",false,0,145,221,true,0,true,'M');
 
-	$pdf->MultiCell(40, 0,$a_questions[$keys[1]] ,"1","L",false,0,10,253,true,0,true,'M');
+	$pdf->MultiCell(45, 0,$a_questions[$keys[1]] ,"1","C",false,0,10,266,true,0,true,'M');
 	$pdf->MultiCell(38, 0,$array_pdf_question[$keys[1]][0],"0","L",false,0,55,253,true,0,true,'M');
 	$pdf->MultiCell(52, 0,$array_pdf_question[$keys[1]][1],"0","L",false,0,91,253,true,0,true,'M');
 	$pdf->MultiCell(56, 0,$array_pdf_question[$keys[1]][2],"0","L",false,0,145,253,true,0,true,'M');

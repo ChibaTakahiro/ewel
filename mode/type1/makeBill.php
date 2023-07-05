@@ -134,7 +134,7 @@ if($sec == "makes"){
 	$where[ 'date2' ] = sprintf("%04d-%02d-%02d 23:59:59",$year2,$month2,$day2);
 	$where[ 'testgrp_id' ] = $_REQUEST[ 'tid' ];
 	$detail = $obj->getTestDetailGroupBill($where);
-
+	
 	if($detail && count($detail)){
 		$i=0;
 		foreach($detail as $key=>$val ){
@@ -171,7 +171,7 @@ if($sec == "makes"){
 		}
 	}
 
-	$total = $total*1.08;
+	$total = $total*1.1;
 
 	$main[0][ 'money_total' ] = $total;
 	

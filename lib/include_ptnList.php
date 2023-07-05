@@ -18,7 +18,6 @@ class ptnListMethod extends method{
 		$sql .= " GROUP BY TYPE ";
 		$sql .= " ORDER BY TYPE +0";
 
-                
                 $stmt = $this->db->prepare($sql);
                 $stmt->execute();
                 $i=0;
@@ -116,9 +115,6 @@ class ptnListMethod extends method{
 		if($basetype != 1){
 			$sql .= " AND t.customer_display = '1' ";
 		}
-		//	$sql .= " AND tt.del = '0' ";
-	//	$sql .= " AND tt.disabled = '0' ";
-
 		if($bill && $name){
 			$sql .= " AND t.name LIKE '%".$name."%'";
 		}
@@ -171,6 +167,16 @@ if($_REQUEST[ 'aaa' ]){
                 $stmt->execute();
 	}
 
+	public function getUserRow($where){
+		$sql = "
+			SELECT count(t.id) as cnt FROM t_user AS t  WHERE t.partner_id=:partner_id AND t.del = '0' 
+		";
+		$prepare = $this->db->prepare($sql);
+		$prepare->bindValue(':partner_id', $where[ 'id' ], PDO::PARAM_INT);
+		$prepare->execute();
+		$result = $prepare->fetchAll(PDO::FETCH_ASSOC);
+		return $result[0]['cnt'];
+	}
 
 	//--------------------------------
 	//重みデータ取得

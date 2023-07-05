@@ -18,6 +18,7 @@ class billpdfMethod extends method{
 		$pay_name         = $data[ 'pay_name'         ];
 		$post1            = $data[ 'post1'            ];
 		$post2            = $data[ 'post2'            ];
+		$tekikaku         = $data[ 'tekikaku'            ];
 		$address          = $data[ 'address'          ];
 		$address2         = $data[ 'address2'          ];
 		$busyo            = $data[ 'busyo'            ];
@@ -25,6 +26,7 @@ class billpdfMethod extends method{
 		$title            = $data[ 'title'            ];
 		$registdate       = $data[ 'registdate'       ];
 		$company_telnum   = $data[ 'telnumber'        ];
+		$tekikaku   = $data[ 'tekikaku'        ];
 
 		if($data[ 'download_status' ]){
 			$download_status  = $data[ 'download_status'  ];
@@ -75,6 +77,7 @@ class billpdfMethod extends method{
 			$sql .= " ,pay_name='".$pay_name."'";
 			$sql .= " ,post1='".$post1."'";
 			$sql .= " ,post2='".$post2."'";
+			$sql .= " ,tekikaku='".$tekikaku."'";
 			$sql .= " ,address='".$address."'";
 			$sql .= " ,address2='".$address2."'";
 			$sql .= " ,busyo='".$busyo."'";
@@ -114,6 +117,7 @@ class billpdfMethod extends method{
 			$sql .= ",pay_name";
 			$sql .= ",post1";
 			$sql .= ",post2";
+			$sql .= ",tekikaku";
 			$sql .= ",address";
 			$sql .= ",address2";
 			$sql .= ",busyo";
@@ -148,6 +152,7 @@ class billpdfMethod extends method{
 			$sql .= ",'".$pay_name."'";
 			$sql .= ",'".$post1."'";
 			$sql .= ",'".$post2."'";
+			$sql .= ",'".$tekikaku."'";
 			$sql .= ",'".$address."'";
 			$sql .= ",'".$address2."'";
 			$sql .= ",'".$busyo."'";

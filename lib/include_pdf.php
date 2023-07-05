@@ -260,11 +260,11 @@ class pdfMethod extends method{
 		$sql .= " test_id=".$tid." AND ";
 		$sql .= " type IN(".$ty.") AND ";
 		$sql .= " 1=1 ";
-                
-                $stmt = $this->db->prepare($sql);
-                $stmt->execute();
-                $result = $stmt->fetch(PDO::FETCH_ASSOC);
-                
+		           
+		$stmt = $this->db->prepare($sql);
+		$stmt->execute();
+		$result = $stmt->fetch(PDO::FETCH_ASSOC);
+    
 		return $result;
 	}
 	

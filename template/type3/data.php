@@ -358,7 +358,7 @@ if($excelBtn) {
         ?>
 				<td>
 <?php
-                        if(count($wdata) >= 1 && $weight == '0') {
+                        if($wdata && count($wdata) >= 1 && $weight == '0') {
                             //重みつけを表示する
                             $wtKey = 1;
                             if($excel_master_status == 0) {

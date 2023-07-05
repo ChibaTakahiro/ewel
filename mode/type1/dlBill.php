@@ -41,6 +41,8 @@ $company[4]                 = $main[0][ 'company_address2' ];
 $company[ 'company_name' ]  = $main[0][ 'company_name'    ];
 $company[8]  = $a_company[8];
 
+$company[10]                 = $main[0][ 'tekikaku' ];
+
 
 $number         = $main[0][ 'bill_num'   ];
 $regd           = explode("-", $main[0][ 'registdate' ]); 

@@ -15,8 +15,6 @@ require_once("./lib/include_cusDown.php");
 require_once('./lib/jpgraph4/src/jpgraph.php');
 require_once('./lib/jpgraph4/src/jpgraph_bar.php');
 
-
-
 error_log("[". date('Y-m-d H:i:s') . "]". "PDF出力しましたテスト。\n", 3, D_PATH_HOME."/logs/debugPDF.log");
 
 $obj = new pdfMethod();
@@ -160,7 +158,6 @@ $name = mb_convert_encoding($testdata[ 'name' ],"SJIS","UTF-8");
 
 
 $pdfline = explode(":",$testdata[ 'pdfdownload' ]);
-
 
 if(
 	in_array("1",$pdfline)
@@ -331,7 +328,8 @@ if(
 		}
 		//重みデータ取得
 		//行動価値検査は１つなので、重みデータも１つ取得する
-		$testweight[0] = $obj->getWeight($where,$type);
+
+		$testweight[0] = $obj->getWeight($where,$types);
 		if($five && $_REQUEST[ 'code' ] != "PDF" ){
 			//マスタデータがあるときは重みの再設定
 			$testweight = array();

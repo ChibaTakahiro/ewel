@@ -107,7 +107,7 @@ include_once("include_title.php");
 			</div>
 		<?php endif; ?>
 <?PHP
-		if(count($info)){
+		if(isset($info) && count($info)){
 ?>
 			<ul id="infoBox">
 				<li><h3>■<?=$str4?></h3></li>
