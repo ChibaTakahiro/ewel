@@ -242,22 +242,23 @@ class judge5Class extends method{
 				FROM
 					jug_boss_text5
 				WHERE
-					jmid = ".$where[ 'jmid' ]."
+					jmid = ".$where[ 'jmid' ]." 
 				";
 		if($type == "subordinate"){
-			$sql .= "
-						AND type=2
-						AND bossid = '".$where[ 'bossid' ]."'
+			$sql .= " 
+						AND type = 2
+						AND bossid = ".$where[ 'bossid' ]."
 					";
 		}else{
-			$sql .= "
+			$sql .= " 
 						AND type=1
-						AND bossid = '0'
+						AND bossid=0
 					";
 		}
+
 		$stmt = $this->db->prepare($sql);
-                $stmt->execute();
-                $rlt = $stmt->fetch(PDO::FETCH_ASSOC);
+		$stmt->execute();
+		$rlt = $stmt->fetch(PDO::FETCH_ASSOC);
 		return $rlt;
 	}
 

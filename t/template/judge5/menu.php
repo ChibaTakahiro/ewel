@@ -19,7 +19,7 @@ include_once("include_header.php");
 ?>
 		<h3 id="kojinh3"><?=$text[1]?></h3>
 
-<?PHP if(count($tlist)){ ?>
+<?PHP if(isset($tlist) && count($tlist)){ ?>
 		<div id="explain" style="text-align:center;">
 			<p><?=$text[5]?></p>
 		</div>
