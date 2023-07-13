@@ -1,4 +1,5 @@
 <?PHP
+
 require_once(D_PATH_HOME."t/lib/include_ba.php");
 require_once(D_PATH_HOME."t/lib/include_PFS.php");
 $obj = new BAmethod();
@@ -123,7 +124,7 @@ $array_exam[3] = array(
 			),
 		"29"=>array(
 				"a"=>"臨機応変に優先順位を変えながら楽しく課題をかたづける",
-				"b"=>"気難しい客のいる店の接客の仕事（アルバイト）も辛くない",
+				"b"=>"気難しい客のいる店の接客の仕事も辛くない",
 			),
 		"30"=>array(
 				"a"=>"涙もろく、もらい泣きをするほうである。",
@@ -137,7 +138,7 @@ $array_exam[4] = array(
 				"b"=>"自分は本当はどうしたいのだろう、どんな気持ちなのだろうと、いつも考える",
 			),
 		"32"=>array(
-				"a"=>"気難しい客のいる店の接客の仕事（アルバイト）も辛くない",
+				"a"=>"気難しい客のいる店の接客の仕事も辛くない",
 				"b"=>"臨機応変に優先順位を変えながら楽しく課題をかたづける",
 			),
 		"33"=>array(
@@ -164,6 +165,7 @@ if($_REQUEST[ 'next' ]){
 }else{
 	$pager = 1;
 }
+
 
 //最大のページ数
 $max = count($array_exam);
@@ -215,7 +217,6 @@ if($_REQUEST[ 'page' ]){
 	}
 }
 
-
 //次のページ
 if($_REQUEST[ 'next' ]){
 	//エラーチェック
@@ -263,6 +264,7 @@ if($_REQUEST[ 'next' ]){
 			break;
 		}
 		$pager  = $_REQUEST[ 'nextPage' ]-1;
+
 	}else
 	if($max < $_REQUEST[ 'nextPage' ]){
 		//----------------------------
@@ -346,7 +348,6 @@ if($_REQUEST[ 'back' ]){
 //テストデータ取得
 $tdetail = $obj->getTestPaper($where);
 //var_dump($pager);
-//var_dump($tdetail);
 //var_dump($_REQUEST);
 
 if($_REQUEST[ 'next' ]){
@@ -404,6 +405,7 @@ if($_REQUEST[ 'next' ]){
 			}
 		}
 	}
+	
 	if($pager >= 2){
 		for($i=1;$i<=10;$i++){
 			$q = "q".$i;
@@ -424,10 +426,9 @@ if($_REQUEST[ 'next' ]){
 }
 
 
-
 $nextPage = $pager+1;
 $backPage = $pager-1;
-	
+
 $exam = $array_exam[$pager];
 
 
