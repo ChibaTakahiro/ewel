@@ -12,9 +12,19 @@ require_once("./lib/include_cusDown.php");
 require_once("./lib/include_wt.php");
 require_once("./lib/include_AAP.php");
 
-ini_set( 'display_errors', 0 );
+ini_set( 'display_errors', 1 );
 $obj = new cusDownMethod();
 $objw = new wtMethod();
+
+
+
+
+
+
+exit();
+
+
+
 
 
 

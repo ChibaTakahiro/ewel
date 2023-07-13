@@ -25,6 +25,7 @@ if(
     || $obj->test52 == 68
     || $obj->test52 == 86
     || $obj->test52 == 87
+    || $obj->test52 == 89
         ){
 	//評価検査の時
 	$mem = array();

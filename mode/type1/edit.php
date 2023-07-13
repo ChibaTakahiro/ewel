@@ -109,10 +109,10 @@ if(!count($partner)){
 	}elseif($_REQUEST[ 'chgConf' ] ){
 		foreach($license_parts as $key=>$val){
 			if($_REQUEST[ 'calc' ][$key] == "+"){
-				$license_part[$key] = $val+(int)$_REQUEST[ 'testType' ][$key];
+				$license_part[$key] = (int)$val+(int)$_REQUEST[ 'testType' ][$key];
 				$license_edit_part[$key] = (int)$_REQUEST[ 'testType' ][$key];
 			}else{
-				$license_part[$key] = $val-(int)$_REQUEST[ 'testType' ][$key];
+				$license_part[$key] = (int)$val-(int)$_REQUEST[ 'testType' ][$key];
 				$license_edit_part[$key] = (int)$_REQUEST[ 'testType' ][$key];
 			}
 		}
