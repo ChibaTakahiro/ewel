@@ -59,7 +59,6 @@ class jug extends method{
 	    $stmt = $this->db->prepare($sql);
 	    $stmt->execute();
 	    $emp = $stmt->fetch(PDO::FETCH_ASSOC);
-
 	    $ex = explode(",",$emp[ 'emp' ]);
 	    $sepnum = explode(",",$emp[ 'sepnum' ]);
 
@@ -400,7 +399,7 @@ class jug extends method{
 				FROM
 					jug_member as j
 					LEFT JOIN jug_boss as jb ON j.id = jb.jmid
-					LEFT JOIN t_testpaper as t ON t.testgrp_id = j.testgrp_id AND t.number = j.num AND t.type IN (52,60,62,67,68,86,87)
+					LEFT JOIN t_testpaper as t ON t.testgrp_id = j.testgrp_id AND t.number = j.num AND t.type IN (52,60,62,67,68,86,87,89)
 				WHERE
 					j.testgrp_id = '".$where[ 'testgrp_id' ]."'
 					AND t.testgrp_id = '".$where[ 'testgrp_id' ]."'
@@ -586,7 +585,7 @@ class jug extends method{
 		$sql .= " GROUP BY j.empnum ) as a
 				LEFT JOIN  t_testpaper  as t ON t.testgrp_id = a.testgrp_id AND t.number = a.num
 				WHERE
-					t.type IN (52,60,62,67,68,86,87)
+					t.type IN (52,60,62,67,68,86,87,89)
 					AND t.testgrp_id = '".$where[ 'testgrp_id' ]."'
 		";
 
@@ -640,7 +639,7 @@ class jug extends method{
 				WHERE
 					testgrp_id = '".$rlt[ 'testgrp_id' ]."'
 					AND number = '".$rlt[ 'num' ]."'
-					AND type IN (52,60,62,67,68,86)
+					AND type IN (52,60,62,67,68,86,89)
 				";
 
                 $stmt = $this->db->prepare($sql);

@@ -583,7 +583,7 @@ class tMethod extends method{
 	     */
       if ($types == 52 || $types == 67 || $types == 68) {
         $jugtable = "jug_boss_text";
-      }elseif($types == 86){
+      }elseif($types == 86 || $types == 89){
         $jugtable = "jug_boss_text5";
       }elseif($types == 87){
         $jugtable = "jug_boss_text6";
