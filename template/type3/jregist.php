@@ -67,7 +67,7 @@ if($basetype == 2){
 				<th>生年月日</th>
 				<th style="width:230px;">機能</th>
 			</tr>
-<?PHP if(count($jud)){ foreach($jud as $key=>$val){ ?>
+<?PHP if(isset($jud) && count($jud)){ foreach($jud as $key=>$val){ ?>
 			<tr>
 				<td  ><?=$val[ 'num' ]?></td>
 				<td style='text-align:center !important;' ><?=$val[ 'boss' ]?></td>

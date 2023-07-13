@@ -210,7 +210,7 @@ include_once("include_title.php");
 <?PHP
 			foreach($array_pdf as $key=>$val){
 				$chk = "";
-				if(count($_REQUEST[ 'pdf' ])){
+				if(isset($_REQUEST[ 'pdf' ]) && count($_REQUEST[ 'pdf' ])){
 					if($_REQUEST[ 'pdf' ][$key]){
 						
 ?>

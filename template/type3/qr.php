@@ -114,6 +114,7 @@ $(function(){
         || $obj->test52 == 68
         || $obj->test52 == 86
         || $obj->test52 == 87
+        || $obj->test52 == 89
         ){ ?>
 <?PHP //評価検査の時　?>
 			<table class="table">
