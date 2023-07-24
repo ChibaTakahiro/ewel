@@ -14,7 +14,7 @@ include_once("include_header.php");
 		<ul>
 <?PHP foreach($tlist as $key=>$val){ ?>
 
-<?PHP if($val[ 'type' ] == 52 || $val[ 'type' ] == 60 || $val[ 'type' ] == 62 || $val[ 'type' ] == 68 || $val[ 'type' ] == 86 || $val[ 'type' ] == 87){ ?>
+<?PHP if($val[ 'type' ] == 52 || $val[ 'type' ] == 60 || $val[ 'type' ] == 62 || $val[ 'type' ] == 68 || $val[ 'type' ] == 86 || $val[ 'type' ] == 87 || $val[ 'type' ] == 89){ ?>
 			<li><a href="/index/csvDown/<?=$sec?>/<?=$val[ 'id' ]?>/<?=$val[ 'type' ]?>/?type=boss"><?=$val[ 'name' ]?>【<?=$a_test_type[$val[ 'type' ]]?>】：上司向け</a></li>
 			<li><a href="/index/csvDown/<?=$sec?>/<?=$val[ 'id' ]?>/<?=$val[ 'type' ]?>/?type=sub"><?=$val[ 'name' ]?>【<?=$a_test_type[$val[ 'type' ]]?>】：部下向け</a></li>
 			<li><a href="/index/csvDown/<?=$sec?>/<?=$val[ 'id' ]?>/<?=$val[ 'type' ]?>/anq"><?=$val[ 'name' ]?>【アンケート】</a></li>

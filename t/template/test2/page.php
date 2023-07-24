@@ -74,13 +74,13 @@ include_once("include_header.php");
 ?>
 		<tr>
 			<td class="no"><?=$key?></td>
-			<td ><?=$val[a]?></td>
+			<td ><?=$val['a']?></td>
 			<td class="ans" ><div class="indent" ><input type="radio" name="q[<?=$key?>]" value="1" id="chk_<?=$key?>_1" <?=$chk1?> class="values<?=$key?>"></div><img src="<?=D_URL_TEST?>image/check_<?=$img1?>.gif" class="radio img<?=$key?>" id="img_<?=$key?>_1" /></td>
 			<td class="ans" ><div class="indent" ><input type="radio" name="q[<?=$key?>]" value="2" id="chk_<?=$key?>_2" <?=$chk2?> class="values<?=$key?>"></div><img src="<?=D_URL_TEST?>image/check_<?=$img2?>.gif" class="radio img<?=$key?>" id="img_<?=$key?>_2" /></td>
 			<td class="ans" ><div class="indent" ><input type="radio" name="q[<?=$key?>]" value="3" id="chk_<?=$key?>_3" <?=$chk3?> class="values<?=$key?>"></div><img src="<?=D_URL_TEST?>image/check_<?=$img3?>.gif" class="radio img<?=$key?>" id="img_<?=$key?>_3" /></td>
 			<td class="ans" ><div class="indent" ><input type="radio" name="q[<?=$key?>]" value="4" id="chk_<?=$key?>_4" <?=$chk4?> class="values<?=$key?>"></div><img src="<?=D_URL_TEST?>image/check_<?=$img4?>.gif" class="radio img<?=$key?>" id="img_<?=$key?>_4" /></td>
 			<td class="ans" ><div class="indent" ><input type="radio" name="q[<?=$key?>]" value="5" id="chk_<?=$key?>_5" <?=$chk5?> class="values<?=$key?>"></div><img src="<?=D_URL_TEST?>image/check_<?=$img5?>.gif" class="radio img<?=$key?>" id="img_<?=$key?>_5" /></td>
-			<td ><?=$val[b]?></td>
+			<td ><?=$val['b']?></td>
 		</tr>
 
 <?PHP

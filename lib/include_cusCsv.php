@@ -959,9 +959,10 @@ class cusCsvMethod extends method
             case "68":
             case "86":
             case "87":
+            case "89":
                 if ($type == 87) {
                     $tbl1 = "jug_boss_text6";
-                } elseif ($type == 86) {
+                } elseif ($type == 86 || $type == 89) {
                     $tbl1 = "jug_boss_text5";
                 } elseif ($type == 62) {
                     $tbl1 = "jug_boss_text3";

@@ -183,7 +183,9 @@ case "60":
 	case "87":
 	    include("./mode/type3/csvJug87.php");
 	    break;
-
+	case "89":
+			include("./mode/type3/csvJug89.php");
+			break;
 	case "70":
 		include("./mode/type3/csvBAG.php");
 	break;

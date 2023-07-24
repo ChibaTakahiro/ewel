@@ -1,5 +1,5 @@
 <?php
-
+ini_set('display_errors', "On");
 require_once(D_PATH_HOME."t/lib/include_ba.php");
 $obj = new BAmethod();
 $array_exam[1] = array(
@@ -51,7 +51,7 @@ $array_exam[4] = array(
 
 //ページ設定
 if ($_REQUEST[ 'next' ]) {
-    $pager = $_REQUEST[nextPage];
+    $pager = $_REQUEST['nextPage'];
 } else {
     $pager = 1;
 }
@@ -75,7 +75,7 @@ if ($ua) {
 //--------------------------------
 //回答登録
 //--------------------------------
-if (count($_REQUEST[ 'q' ])) {
+if (isset($_REQUEST[ 'q' ]) && count($_REQUEST[ 'q' ])) {
     foreach ($_REQUEST[ 'q' ] as $key=>$val) {
         $q = "q".$key;
         $edit[ $q ] = $val;
@@ -177,8 +177,8 @@ if ($_REQUEST[ 'next' ]) {
         list($row, $lv, $standard_score, $dev_number) = BA2($tdetail, $weights, $raw_data, $dev_data, 1);
         $soyo = $dev_number;
         $imgDir = "tb";
-        $s_day  = split('/', $tdetail['exam_date']);
-        $s_time = split(':', $tdetail['start_time']);
+        $s_day  = explode('/', $tdetail['exam_date']);
+        $s_time = explode(':', $tdetail['start_time']);
 
         $start_timestamp = mktime($s_time[0], $s_time[1], $s_time[2], $s_day[1], $s_day[2], $s_day[0]);
         $end_timestamp   = time();
@@ -213,6 +213,7 @@ if ($_REQUEST[ 'next' ]) {
         $t->editCompleteFlg($where);
         //メール配信
         $t->sendFinMail($where);
+
         $fin_disp = $test[ 'fin_disp' ];
         $temp = "Fin";
     }

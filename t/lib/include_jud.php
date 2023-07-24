@@ -5,7 +5,7 @@ class judgeClass extends method{
 		if($first == 87){
 			$tbl = "jug_boss_text6";
 		}else
-		if($first == 86){
+		if($first == 86 || $first == 89){
 				$tbl = "jug_boss_text5";
 		}else
 		if($first == 60){
@@ -15,7 +15,9 @@ class judgeClass extends method{
 		}
 		$sql = "
 				SELECT 
-					endtime
+					endtime,
+					jmid,
+					bossid
 				FROM
 					".$tbl."
 				WHERE
@@ -26,7 +28,6 @@ class judgeClass extends method{
 		$stmt = $this->db->prepare($sql);
 		$stmt->execute();
 		$rlt = $stmt->fetch(PDO::FETCH_ASSOC);
-
 		if($rlt[ 'endtime' ] == "0000-00-00 00:00:00" || !$rlt[ 'endtime' ]){
 			return false;
 		}
@@ -75,7 +76,7 @@ class judgeClass extends method{
 																	LEFT JOIN jug_member as jm2 ON jm2.id=a.ans5
 																	";
 												}else 
-												if ($first == 86) {
+												if ($first == 86 || $first == 89) {
 														$tbl = "jug_boss_text5";
 														$sql = "
 																	SELECT 
