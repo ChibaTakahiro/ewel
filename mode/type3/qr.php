@@ -16,7 +16,6 @@ $code = base64_encode($test[ "dir" ]);
 $use = $obj->getUsersData($where);
 //受検者一覧取得
 $mem = $obj->getTestDataList($where,$a_test_type);
-
 if(
         $obj->test52 == 52
         || $obj->test52 == 60
@@ -26,10 +25,15 @@ if(
     || $obj->test52 == 86
     || $obj->test52 == 87
     || $obj->test52 == 89
+    || $obj->test52 == 90
         ){
 	//評価検査の時
 	$mem = array();
 	$mem = $obj->getTestJug($where);
-	$test[ 'number' ] = count($mem);
+    if(!$mem){
+        $test[ 'number' ] = 0;
+    }else{
+	    $test[ 'number' ] = count($mem);
+    }
 }
 ?>

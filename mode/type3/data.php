@@ -416,7 +416,7 @@ if($tykey['75']){
         exit();
 }
 
-if($tykey[52] || $tykey[60] || $tykey[86] || $tykey[87] || $tykey[89] || $tykey[62]  || $tykey[67] || $tykey[68]){
+if($tykey[52] || $tykey[60] || $tykey[86] || $tykey[87] || $tykey[90] || $tykey[89] || $tykey[62]  || $tykey[67] || $tykey[68]){
 //評価検査のとき
 require_once("./lib/include_jug.php");
 $hobj = new jug();

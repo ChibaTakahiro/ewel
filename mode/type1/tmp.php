@@ -130,7 +130,7 @@ if($_REQUEST[ 'reg' ] && $_FILES[ 'upfile' ][ 'name' ]){
 				chmod("./tmpfile/".$dirs."/".$filename, 0644);
 				$size = filesize("./tmpfile/".$dirs."/".$filename);
 
-				if($size >= 30000000){
+				if($size >= 300000000){
 					$errflg = 1;
 				}
 	

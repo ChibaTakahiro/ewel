@@ -21,6 +21,7 @@ if($five == "anq"){
 }
 
 $tlist = $obj->getTestdetail($where);
+
 header('Content-Type: application/octet-stream');
 header('Content-Disposition: attachment; filename=' . $fileName);
 
@@ -185,6 +186,9 @@ case "60":
 	    break;
 	case "89":
 			include("./mode/type3/csvJug89.php");
+			break;
+	case "90":
+			include("./mode/type3/csvJug90.php");
 			break;
 	case "70":
 		include("./mode/type3/csvBAG.php");

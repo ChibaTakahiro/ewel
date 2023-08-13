@@ -153,7 +153,7 @@ if($_REQUEST[ 'lists' ]){
 				$html .= "</ul>";
 			}else{
 				$w2 = "";
-				if(( $basetype == 2 || $basetype == 3 ) && $val[ 'type' ] != 52 && $val[ 'type' ] != 60 && $val[ 'type' ] != 62 && $val[ 'type' ] != 67  && $val[ 'type' ] != 68  && $val[ 'type' ] != 86 && $val[ 'type' ] != 87 && $val[ 'type' ] != 89 ){
+				if(( $basetype == 2 || $basetype == 3 ) && $val[ 'type' ] != 52 && $val[ 'type' ] != 60 && $val[ 'type' ] != 62 && $val[ 'type' ] != 67  && $val[ 'type' ] != 68  && $val[ 'type' ] != 86 && $val[ 'type' ] != 87 && $val[ 'type' ] != 89 && $val[ 'type' ] != 90 ){
 					$w2 = "w20";
 				}
 				$html .= "<ul class='ulmenu ".$w2."' style='display:inline-block;'>";
@@ -217,6 +217,7 @@ if($_REQUEST[ 'lists' ]){
 					    || in_array(86,$blist[ $val['test_id'] ][ 'type' ])
 					    || in_array(87,$blist[ $val['test_id'] ][ 'type' ])
 					    || in_array(89,$blist[ $val['test_id'] ][ 'type' ])
+					    || in_array(90,$blist[ $val['test_id'] ][ 'type' ])
 						){
 						//$qrがid:idのみ表示
 						//$qrがqr:QRコード
@@ -245,6 +246,7 @@ if($_REQUEST[ 'lists' ]){
 							|| $val[ 'type' ] == 86
 							|| $val[ 'type' ] == 87
 							|| $val[ 'type' ] == 89
+							|| $val[ 'type' ] == 90
 							
 						)
             ){
