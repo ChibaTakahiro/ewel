@@ -825,7 +825,7 @@ if ($basetype == 1 && $cdata[ 'pdf_button' ] == 1) {
 		}elseif($key == 49 || $key == 53){
 			//人権用フラグ
 			$flg = "jinFlg";
-		}elseif($key == 52 || $key==60 || $key==62 || $key==67 || $key==68 || $key==86 || $key==87 || $key==89){
+		}elseif($key == 52 || $key==60 || $key==62 || $key==67 || $key==68 || $key==86 || $key==87 || $key==89 || $key==90){
 			//人権用フラグ
 			$flg = "judFlg";
 		}else{

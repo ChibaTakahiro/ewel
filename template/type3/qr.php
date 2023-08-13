@@ -115,6 +115,7 @@ $(function(){
         || $obj->test52 == 86
         || $obj->test52 == 87
         || $obj->test52 == 89
+        || $obj->test52 == 90
         ){ ?>
 <?PHP //評価検査の時　?>
 			<table class="table">
@@ -123,7 +124,7 @@ $(function(){
 					<th>メールアドレス</th>
 					<th>氏名</th>
 				</tr>
-<?PHP if(count($mem)){?>
+<?PHP if($mem && count($mem)){?>
 <?PHP foreach($mem as $key=>$val){ ?>
 				<tr>
 					<td><?=$val[ 'empnum' ]?></td>
