@@ -1,7 +1,7 @@
 <?PHP
 require_once(D_PATH_HOME."t/lib/include_ba.php");
 $obj = new BAmethod();
-
+ini_set('display_errors', "On");
 switch($language){
 case "2":
 		$array_exam[1] = array(

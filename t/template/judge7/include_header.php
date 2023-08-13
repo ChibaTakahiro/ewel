@@ -25,7 +25,7 @@ if($css1){
 ?>
 
 <?PHP
-if($js && count($js)){
+if(isset($js) && count($js)){
 	foreach($js as $key=>$val){
 ?>
 <script src="<?=D_URL?>/js/test/<?=$val?>.js" type="text/javascript"></script>

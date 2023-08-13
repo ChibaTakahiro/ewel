@@ -246,18 +246,19 @@ class judge5Class extends method{
 				";
 		if($type == "subordinate"){
 			$sql .= "
-						AND type=2
+						AND type = 2 
 						AND bossid = '".$where[ 'bossid' ]."'
 					";
 		}else{
 			$sql .= "
-						AND type=1
-						AND bossid = '0'
+						AND type = 1 
+						AND bossid = 0
 					";
 		}
+		
 		$stmt = $this->db->prepare($sql);
-                $stmt->execute();
-                $rlt = $stmt->fetch(PDO::FETCH_ASSOC);
+		$stmt->execute();
+		$rlt = $stmt->fetch(PDO::FETCH_ASSOC);
 		return $rlt;
 	}
 
