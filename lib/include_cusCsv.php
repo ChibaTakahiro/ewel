@@ -960,7 +960,8 @@ class cusCsvMethod extends method
             case "86":
             case "87":
             case "89":
-                if ($type == 87) {
+            case "90":
+                if ($type == 87 || $type == 90) {
                     $tbl1 = "jug_boss_text6";
                 } elseif ($type == 86 || $type == 89) {
                     $tbl1 = "jug_boss_text5";
@@ -980,6 +981,7 @@ class cusCsvMethod extends method
 						test_id = ".$test_id." AND
 						testgrp_id = ".$testgrp_id."
 						";
+
                 $stmt = $this->db->prepare($sql);
                 $stmt->execute();
 
@@ -1041,7 +1043,6 @@ class cusCsvMethod extends method
 					ORDER BY jm.num
 					) as aa
 				";
-
                 break;
 
             case "55":
